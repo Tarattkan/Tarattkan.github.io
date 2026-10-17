@@ -73,6 +73,35 @@ content:
       label: รายละเอียด
       type: text
       required: false
+  - name: education
+    label: ประวัติการศึกษา
+    type: object
+    required: true
+    list:
+      collapsible:
+        collapsed: true
+        summary: '{degree} · พ.ศ. {year}'
+    fields:
+    - name: degree
+      label: คุณวุฒิ (เช่น ปร.ด.)
+      type: string
+      required: true
+    - name: field
+      label: สาขาวิชา
+      type: string
+      required: true
+    - name: institution
+      label: สถาบันการศึกษา
+      type: string
+      required: true
+    - name: country
+      label: ประเทศ
+      type: string
+      required: true
+    - name: year
+      label: ปีที่จบ (พ.ศ.)
+      type: number
+      required: true
   - name: contact_intro
     label: ข้อความส่วนติดต่อ
     type: text
