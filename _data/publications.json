@@ -1,0 +1,72 @@
+[
+  {
+    "year": 2026,
+    "type": "journal",
+    "title": "Gamification in STEM education: Mapping the scientific research landscape",
+    "language": "en",
+    "category": "Gamification · STEM education",
+    "citation": "Multidisciplinary Reviews, 9(12), e2026594.",
+    "url": "https://doi.org/10.31893/multirev.2026594",
+    "topics": "gamification stem เกมมิฟิเคชัน สะเต็ม"
+  },
+  {
+    "year": 2026,
+    "type": "journal",
+    "title": "The TPL-DC Model: Generative AI–Enhanced Personalized Training for Teachers’ Digital Competency",
+    "language": "en",
+    "category": "Generative AI · Digital competency",
+    "citation": "World Journal of Education, 16(1), 46–61.",
+    "url": "https://doi.org/10.5430/wje.v16n1p46",
+    "topics": "ai generative ai digital competency ครู ดิจิทัล ปัญญาประดิษฐ์"
+  },
+  {
+    "year": 2025,
+    "type": "journal",
+    "title": "A Design Thinking-Driven Conceptual Framework for a Creative AI Learning Environment to Enhance Programming Skills (CAILE)",
+    "language": "en",
+    "category": "AI learning environment · Programming",
+    "citation": "Higher Education Studies, 15(4), 312–332.",
+    "url": "https://doi.org/10.5539/hes.v15n4p312",
+    "topics": "ai programming design thinking caile ปัญญาประดิษฐ์ การเขียนโปรแกรม"
+  },
+  {
+    "year": 2025,
+    "type": "journal",
+    "title": "A Bibliometric Analysis of Digital Literacy in Remote Learning",
+    "language": "en",
+    "category": "Digital literacy · Remote learning",
+    "citation": "Higher Education Studies, 15(2), 54–72.",
+    "url": "https://doi.org/10.5539/hes.v15n2p54",
+    "topics": "digital literacy remote learning ความฉลาดรู้ดิจิทัล การเรียนรู้ทางไกล"
+  },
+  {
+    "year": 2023,
+    "type": "conference",
+    "title": "การสร้างตัวละคร Mascot เพื่อใช้ในการเล่าเรื่องและขายผ้าทอพื้นเมือง",
+    "language": "th",
+    "category": "Mascot · Storytelling",
+    "citation": "การประชุมวิชาการสวนดุสิต 2023 ครั้งที่ 5 · หน้า 768\n9 มิถุนายน 2566",
+    "url": "",
+    "topics": "mascot storytelling ตัวละคร ผ้าทอ"
+  },
+  {
+    "year": 2022,
+    "type": "conference",
+    "title": "ระบบอาจารย์ที่ปรึกษาคณะเทคโนโลยีการจัดการ มหาวิทยาลัยเทคโนโลยีราชมงคลอีสาน วิทยาเขตสุรินทร์",
+    "language": "th",
+    "category": "Information system · Academic advising",
+    "citation": "การประชุมวิชาการราชมงคลสุรินทร์ ครั้งที่ 13 · หน้า G335–G345\n17–18 พฤศจิกายน 2565",
+    "url": "",
+    "topics": "ระบบ อาจารย์ที่ปรึกษา information system"
+  },
+  {
+    "year": 2018,
+    "type": "journal",
+    "title": "การพัฒนาและถ่ายทอดเทคโนโลยีโปรแกรมวิเคราะห์ข้อมูลทางสถิติ เพื่อการจัดทำปริญญานิพนธ์ กรณีศึกษา นักศึกษาชั้นปีที่ 4 สาขาวิชาระบบสารสนเทศ คณะเทคโนโลยีการจัดการ มหาวิทยาลัยเทคโนโลยีราชมงคลอีสาน วิทยาเขตสุรินทร์",
+    "language": "th",
+    "category": "Statistical software · Technology transfer",
+    "citation": "PULINET Journal, 5(3), 31–38.",
+    "url": "https://pulinet.oas.psu.ac.th/index.php/journal/article/view/330",
+    "topics": "สถิติ โปรแกรม นักศึกษา statistical analysis"
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "intro": "เทคโนโลยีสารสนเทศ การพัฒนาระบบ\nและเครื่องมือดิจิทัลเพื่อการเรียนรู้",
+  "expertise": [
+    {
+      "title_th": "การวิเคราะห์และออกแบบระบบ",
+      "title_en": "Systems analysis & design"
+    },
+    {
+      "title_th": "การเขียนโปรแกรมและพัฒนาเว็บไซต์",
+      "title_en": "Programming & web development"
+    },
+    {
+      "title_th": "การซ่อมและประกอบคอมพิวเตอร์",
+      "title_en": "Computer repair & assembly"
+    },
+    {
+      "title_th": "ความฉลาดรู้ดิจิทัลและการเรียนรู้ทางไกล",
+      "title_en": "Digital literacy & distance learning"
+    },
+    {
+      "title_th": "ปัญญาประดิษฐ์เชิงสร้างสรรค์",
+      "title_en": "Generative AI"
+    }
+  ]
+}

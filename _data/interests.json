@@ -1,0 +1,22 @@
+{
+  "information_technology": {
+    "title_th": "เทคโนโลยีสารสนเทศ",
+    "title_en": "Information Technology"
+  },
+  "ai": {
+    "title_th": "ปัญญาประดิษฐ์ (AI)",
+    "title_en": "AI"
+  },
+  "meta_analysis": {
+    "title_th": "การวิเคราะห์อภิมาน",
+    "title_en": "Meta-Analysis"
+  },
+  "education": {
+    "title_th": "การศึกษา",
+    "title_en": "Education"
+  },
+  "bibliometric_analysis": {
+    "title_th": "การวิเคราะห์บรรณมิติ",
+    "title_en": "Bibliometric Analysis"
+  }
+}
