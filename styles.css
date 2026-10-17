@@ -48,3 +48,5 @@
 .hero h1,.thai-name,h2{overflow-wrap:anywhere}.brand>span{min-width:0;overflow-wrap:anywhere}
 
 .admin-footer{margin-top:15px;font-size:11px;color:var(--muted)}.admin-footer a{display:inline-flex;align-items:center;gap:12px;min-height:44px;border-bottom:1px solid #d7c8aa}.admin-footer a:hover{color:var(--gold)}.preview-admin-note{padding:16px 24px;background:#f2ecdf;border-top:1px solid #dacbae;color:#665234;text-align:center;font-size:12px;line-height:1.9}.no-js .site-header{position:relative}
+
+.phone-contact{margin-top:20px;margin-bottom:24px}.phone-link{display:inline-flex;align-items:center;min-height:44px;font-family:var(--sans);font-size:22px;line-height:1.5;color:var(--navy);overflow-wrap:anywhere}.phone-link:hover{text-decoration:underline;text-underline-offset:5px}

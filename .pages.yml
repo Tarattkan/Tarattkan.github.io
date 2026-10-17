@@ -88,6 +88,20 @@ content:
     pattern:
       regex: ^[^@\s]+@[^@\s]+\.[^@\s]+$
       message: ใส่อีเมลที่ถูกต้อง
+  - name: phone
+    label: เบอร์โทรศัพท์ที่แสดงบนเว็บไซต์
+    type: string
+    required: true
+    pattern:
+      regex: ^[0-9+() .-]+$
+      message: ใส่เบอร์โทรศัพท์ เช่น 094-1539680
+  - name: phone_href
+    label: ลิงก์โทรศัพท์สำหรับกดโทร
+    type: string
+    required: true
+    pattern:
+      regex: ^tel:\+[1-9][0-9]{7,14}$
+      message: ใส่ลิงก์รูปแบบสากล เช่น tel:+66941539680
   - name: facebook
     label: Facebook
     type: string
