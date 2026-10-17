@@ -11,8 +11,8 @@
   <meta property="og:description" content="{{ site.data.profile.meta_description | escape }}" data-content-en="{{ site.data.profile.meta_description_en | default: site.data.profile.meta_description | escape }}">
   <meta property="og:locale" content="th_TH" data-content-en="en_US">
   <link rel="icon" href="{{ "/assets/monogram.svg" | relative_url }}" type="image/svg+xml">
-  <link rel="stylesheet" href="{{ "/styles.css" | relative_url }}?v=20261017-bilingual">
-  <script src="{{ "/script.js" | relative_url }}?v=20261017-bilingual" defer></script>
+  <link rel="stylesheet" href="{{ "/styles.css" | relative_url }}?v=20261017-language-polish">
+  <script src="{{ "/script.js" | relative_url }}?v=20261017-language-polish" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main" data-en="Skip to content">ข้ามไปยังเนื้อหา</a>
@@ -23,8 +23,8 @@
         <span>{{ site.data.profile.first_name_en | escape }} <span class="brand-surname">{{ site.data.profile.last_name_en | escape }}</span></span>
       </a>
       <div class="language-switch" role="group" aria-label="เลือกภาษา" data-aria-label-en="Choose language" hidden>
-        <button type="button" data-language="th" lang="th" aria-pressed="true">ไทย</button>
-        <button type="button" data-language="en" lang="en" aria-pressed="false">English</button>
+        <button type="button" data-language="th" lang="th" aria-label="ภาษาไทย" title="ภาษาไทย" aria-pressed="true">TH</button>
+        <button type="button" data-language="en" lang="en" aria-label="English" title="English" aria-pressed="false">EN</button>
       </div>
       <button class="menu-toggle" type="button" hidden aria-expanded="false" aria-controls="main-nav" aria-label="เปิดเมนูหลัก">
         <span></span><span></span><span class="sr-only" data-en="Menu">เมนู</span>
