@@ -141,6 +141,18 @@
           <a class="text-link" href="#contact">ช่องทางติดต่อ <span aria-hidden="true">→</span></a>
         </div>
       </div>
+      <div class="shell education-block" aria-labelledby="education-title">
+        <div class="education-heading"><p class="eyebrow">Education</p><h3 id="education-title">ประวัติการศึกษา</h3></div>
+        <div class="education-grid">
+          {% for education in site.data.profile.education %}
+          <article class="education-card">
+            <div class="education-card-header"><p class="education-degree">{{ education.degree | escape }}</p><p class="education-year">พ.ศ. {{ education.year | escape }}</p></div>
+            <h4>{{ education.field | escape }}</h4>
+            <p class="education-institution">{{ education.institution | escape }}<br>{{ education.country | escape }}</p>
+          </article>
+          {% endfor %}
+        </div>
+      </div>
     </section>
 
     <section class="research section" id="research" aria-labelledby="research-title">
