@@ -59,3 +59,21 @@
 @media(max-width:820px){.education-grid{grid-template-columns:1fr;gap:25px}.education-block{margin-top:48px;padding-top:35px}.education-card{padding-top:18px}.education-card-header{margin-bottom:12px}.education-card h4{font-size:16px;margin-bottom:9px}.education-heading h3{font-size:24px}}
 @media(max-width:600px){.education-block{margin-top:40px;padding-top:32px}.education-heading{margin-bottom:22px}.education-degree{font-size:22px}.education-year{font-size:12px}.education-institution{font-size:12px}}
 @media print{.education-grid{grid-template-columns:1fr}.education-card{break-inside:avoid}.education-block{margin-top:24px;padding-top:20px}}
+
+/* Bilingual UI: only the language preference is stored by script.js. */
+[data-en]{white-space:pre-line}.multiline{white-space:pre-line}
+.header-inner{gap:20px}.brand{min-width:0;white-space:normal;flex-shrink:1}.brand img{flex-shrink:0}.main-nav{order:2;margin-left:auto;gap:22px}.language-switch{order:3;display:flex;align-items:center;flex-shrink:0;border:1px solid #b9c0c3;padding:2px;gap:2px}.language-switch button{border:0;background:transparent;color:var(--navy);font:13px/1.2 var(--sans);min-height:44px;padding:8px 11px}.language-switch button[aria-pressed=true]{background:var(--navy);color:white;text-decoration:underline;text-underline-offset:4px;font-weight:600}.language-switch button:focus-visible{outline-offset:1px}.menu-toggle{order:4;flex-shrink:0}.admin-edit-link [data-en]{flex-shrink:1;font:inherit}
+html[lang=en] .topic-english,html[lang=en] .expertise-english{display:none}html[lang=en] .thai-name{font-size:20px}html[lang=en] .education-degree{font-size:21px}html[lang=en] .interest-card .thai-topic{font-size:19px}
+@media(max-width:1100px){
+ .main-nav{display:none;position:absolute;top:100%;left:0;right:0;height:auto;background:white;border-bottom:1px solid var(--line);box-shadow:0 12px 20px #102c420a;padding:12px 24px 20px;gap:0;flex-direction:column;align-items:stretch;max-height:calc(100svh - var(--header));overflow-y:auto;overscroll-behavior:contain}
+ .main-nav.open{display:flex}.main-nav>a{height:auto;min-height:48px;padding:12px 4px;flex-shrink:0}.main-nav>a::after{bottom:6px;right:auto;width:26px;transform-origin:left}.menu-toggle{display:block}.language-switch{margin-left:auto}.brand{max-width:60%}
+ .no-js .header-inner{height:auto;min-height:var(--header);flex-wrap:wrap;padding-block:12px}.no-js .brand{max-width:100%}.no-js .main-nav{position:static;display:flex;flex-direction:row;flex-wrap:wrap;width:100%;padding:0;gap:5px 20px;border:0;box-shadow:none;max-height:none;overflow:visible}.no-js .main-nav>a{padding:8px 0}
+}
+@media(max-width:600px){
+ :root{--header:124px}.header-inner{height:auto;min-height:var(--header);flex-wrap:wrap;gap:2px 12px;padding-block:7px}.brand{max-width:none;flex:1 1 calc(100% - 60px)}.menu-toggle{order:2}.language-switch{order:3;margin-left:auto}.language-switch button{padding-inline:14px}.main-nav{order:4}.no-js .header-inner{min-height:72px}.hero h1{font-size:clamp(39px,10.8vw,62px)}html[lang=en] .thai-name{font-size:18px}.education-card-header{align-items:flex-start}.education-degree{min-width:0;overflow-wrap:anywhere}.admin-edit-link [data-en]{font:inherit}
+}
+@media print{.language-switch{display:none!important}}
+
+.timeline-item>p:empty{display:none}
+/* Translation labels inherit text styling; only the adjacent arrow/count is decorative. */
+.button span[data-en],.paper-link span[data-en],.filter-button>span[data-en],.back-top span[data-en]{font:inherit;margin:0;opacity:1;color:inherit}

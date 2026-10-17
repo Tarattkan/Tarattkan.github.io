@@ -9,7 +9,7 @@ media:
   rename: safe
 content:
 - name: profile
-  label: ประวัติ รูปภาพ และช่องทางติดต่อ
+  label: ประวัติและติดต่อ / Profile & contact
   type: file
   path: _data/profile.json
   format: json
@@ -27,17 +27,32 @@ content:
     type: string
     required: true
   - name: hero_intro
-    label: ข้อความแนะนำหน้าแรก
+    label: ข้อความแนะนำหน้าแรก (ไทย / TH)
     type: string
     required: true
+  - name: hero_intro_en
+    label: ข้อความแนะนำหน้าแรก (อังกฤษ / EN)
+    type: string
+    required: false
+    description: เว้นว่างเพื่อใช้ข้อความเดิม / Leave blank to use the original text.
   - name: affiliation_short
-    label: สังกัดสำหรับหน้าแรก
+    label: สังกัดสำหรับหน้าแรก (ไทย / TH)
     type: text
     required: true
+  - name: affiliation_short_en
+    label: สังกัดสำหรับหน้าแรก (อังกฤษ / EN)
+    type: text
+    required: false
+    description: เว้นว่างเพื่อใช้ข้อความเดิม / Leave blank to use the original text.
   - name: biography
-    label: ประวัติและสังกัด
+    label: ประวัติและสังกัด (ไทย / TH)
     type: text
     required: true
+  - name: biography_en
+    label: ประวัติและสังกัด (อังกฤษ / EN)
+    type: text
+    required: false
+    description: เว้นว่างเพื่อใช้ข้อความเดิม / Leave blank to use the original text.
   - name: photo
     label: รูปโปรไฟล์
     type: image
@@ -49,11 +64,16 @@ content:
       - png
       - webp
   - name: photo_alt
-    label: คำอธิบายรูปสำหรับการเข้าถึง
+    label: คำอธิบายรูปสำหรับการเข้าถึง (ไทย / TH)
     type: string
     required: true
+  - name: photo_alt_en
+    label: คำอธิบายรูปสำหรับการเข้าถึง (อังกฤษ / EN)
+    type: string
+    required: false
+    description: เว้นว่างเพื่อใช้ข้อความเดิม / Leave blank to use the original text.
   - name: roles
-    label: บทบาททางวิชาการ
+    label: บทบาททางวิชาการ / Academic roles
     type: object
     required: true
     list:
@@ -62,19 +82,34 @@ content:
         summary: '{title}'
     fields:
     - name: period
-      label: ช่วงเวลา
+      label: ช่วงเวลา (ไทย / TH)
       type: string
       required: true
+    - name: period_en
+      label: ช่วงเวลา (อังกฤษ / EN)
+      type: string
+      required: false
+      description: เว้นว่างเพื่อใช้ข้อความเดิม / Leave blank to use the original text.
     - name: title
-      label: บทบาท/ตำแหน่ง
+      label: บทบาท/ตำแหน่ง (ไทย / TH)
       type: string
       required: true
+    - name: title_en
+      label: บทบาท/ตำแหน่ง (อังกฤษ / EN)
+      type: string
+      required: false
+      description: เว้นว่างเพื่อใช้ข้อความเดิม / Leave blank to use the original text.
     - name: detail
-      label: รายละเอียด
+      label: รายละเอียด (ไทย / TH)
       type: text
       required: false
+    - name: detail_en
+      label: รายละเอียด (อังกฤษ / EN)
+      type: text
+      required: false
+      description: เว้นว่างเพื่อใช้ข้อความเดิม / Leave blank to use the original text.
   - name: education
-    label: ประวัติการศึกษา
+    label: ประวัติการศึกษา / Education
     type: object
     required: true
     list:
@@ -83,33 +118,65 @@ content:
         summary: '{degree} · พ.ศ. {year}'
     fields:
     - name: degree
-      label: คุณวุฒิ (เช่น ปร.ด.)
+      label: คุณวุฒิ (เช่น ปร.ด.) (ไทย / TH)
       type: string
       required: true
+    - name: degree_en
+      label: คุณวุฒิ (เช่น ปร.ด.) (อังกฤษ / EN)
+      type: string
+      required: false
+      description: เว้นว่างเพื่อใช้ข้อความเดิม / Leave blank to use the original text.
     - name: field
-      label: สาขาวิชา
+      label: สาขาวิชา (ไทย / TH)
       type: string
       required: true
+    - name: field_en
+      label: สาขาวิชา (อังกฤษ / EN)
+      type: string
+      required: false
+      description: เว้นว่างเพื่อใช้ข้อความเดิม / Leave blank to use the original text.
     - name: institution
-      label: สถาบันการศึกษา
+      label: สถาบันการศึกษา (ไทย / TH)
       type: string
       required: true
+    - name: institution_en
+      label: สถาบันการศึกษา (อังกฤษ / EN)
+      type: string
+      required: false
+      description: เว้นว่างเพื่อใช้ข้อความเดิม / Leave blank to use the original text.
     - name: country
-      label: ประเทศ
+      label: ประเทศ (ไทย / TH)
       type: string
       required: true
+    - name: country_en
+      label: ประเทศ (อังกฤษ / EN)
+      type: string
+      required: false
+      description: เว้นว่างเพื่อใช้ข้อความเดิม / Leave blank to use the original text.
     - name: year
       label: ปีที่จบ (พ.ศ.)
       type: number
       required: true
+      description: กรอก พ.ศ. ระบบแปลงเป็น ค.ศ. โดยอัตโนมัติในหน้าอังกฤษ / Enter a Buddhist Era year; the English page converts
+        it to CE.
   - name: contact_intro
-    label: ข้อความส่วนติดต่อ
+    label: ข้อความส่วนติดต่อ (ไทย / TH)
     type: text
     required: true
+  - name: contact_intro_en
+    label: ข้อความส่วนติดต่อ (อังกฤษ / EN)
+    type: text
+    required: false
+    description: เว้นว่างเพื่อใช้ข้อความเดิม / Leave blank to use the original text.
   - name: contact_affiliation
-    label: สังกัดและที่ติดต่อ
+    label: สังกัดและที่ติดต่อ (ไทย / TH)
     type: text
     required: true
+  - name: contact_affiliation_en
+    label: สังกัดและที่ติดต่อ (อังกฤษ / EN)
+    type: text
+    required: false
+    description: เว้นว่างเพื่อใช้ข้อความเดิม / Leave blank to use the original text.
   - name: email
     label: อีเมล
     type: string
@@ -153,11 +220,16 @@ content:
       regex: ^https://[^\s]+$
       message: ใส่ลิงก์ HTTPS ที่ถูกต้อง หรือเว้นว่างหากยังไม่มีลิงก์
   - name: meta_description
-    label: คำอธิบายเว็บไซต์สำหรับผลการค้นหา
+    label: คำอธิบายเว็บไซต์สำหรับผลการค้นหา (ไทย / TH)
     type: text
     required: true
+  - name: meta_description_en
+    label: คำอธิบายเว็บไซต์สำหรับผลการค้นหา (อังกฤษ / EN)
+    type: text
+    required: false
+    description: เว้นว่างเพื่อใช้ข้อความเดิม / Leave blank to use the original text.
 - name: interests
-  label: ความสนใจด้านการวิจัยจาก Google Scholar
+  label: ความสนใจด้านการวิจัย / Research interests
   type: file
   path: _data/interests.json
   format: json
@@ -228,15 +300,20 @@ content:
       type: string
       required: true
 - name: teaching
-  label: งานสอนและความเชี่ยวชาญ
+  label: งานสอนและความเชี่ยวชาญ / Teaching & expertise
   type: file
   path: _data/teaching.json
   format: json
   fields:
   - name: intro
-    label: ข้อความแนะนำงานสอน
+    label: ข้อความแนะนำงานสอน (ไทย / TH)
     type: text
     required: true
+  - name: intro_en
+    label: ข้อความแนะนำงานสอน (อังกฤษ / EN)
+    type: text
+    required: false
+    description: เว้นว่างเพื่อใช้ข้อความเดิม / Leave blank to use the original text.
   - name: expertise
     label: ความเชี่ยวชาญ
     type: object
@@ -255,7 +332,7 @@ content:
       type: string
       required: true
 - name: publications
-  label: ผลงานวิจัยและบทความ
+  label: ผลงานวิจัย / Publications
   type: file
   path: _data/publications.json
   format: json
@@ -275,9 +352,10 @@ content:
       - name: conference
         label: ประชุมวิชาการ
   - name: title
-    label: ชื่อบทความ
+    label: ชื่อบทความต้นฉบับ / Original published title
     type: text
     required: true
+    description: คงชื่อบทความตามต้นฉบับในทั้งสองภาษา / The published title stays unchanged in both languages.
   - name: language
     label: ภาษาชื่อบทความ
     type: select
@@ -289,13 +367,22 @@ content:
       - name: en
         label: English
   - name: category
-    label: หัวข้อย่อยที่แสดงเหนือชื่อบทความ
+    label: หัวข้อย่อยเดิม (สำรอง) / Original category (fallback)
     type: string
     required: true
+  - name: category_th
+    label: หัวข้อย่อยภาษาไทย / Thai category
+    type: string
+    required: false
+  - name: category_en
+    label: หัวข้อย่อยภาษาอังกฤษ / English category
+    type: string
+    required: false
   - name: citation
     label: วารสาร/การประชุม เล่ม ฉบับ หน้า และวันที่
     type: text
     required: true
+    description: ใช้ข้อมูลอ้างอิงตามต้นฉบับ / Keep the original bibliographic details.
   - name: url
     label: ลิงก์บทความ / DOI (ถ้ามี)
     type: string
