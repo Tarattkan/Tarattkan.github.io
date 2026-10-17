@@ -7,7 +7,9 @@
     "category": "Gamification · STEM education",
     "citation": "Multidisciplinary Reviews, 9(12), e2026594.",
     "url": "https://doi.org/10.31893/multirev.2026594",
-    "topics": "gamification stem เกมมิฟิเคชัน สะเต็ม"
+    "topics": "gamification stem เกมมิฟิเคชัน สะเต็ม",
+    "category_th": "เกมมิฟิเคชัน · สะเต็มศึกษา",
+    "category_en": "Gamification · STEM education"
   },
   {
     "year": 2026,
@@ -17,7 +19,9 @@
     "category": "Generative AI · Digital competency",
     "citation": "World Journal of Education, 16(1), 46–61.",
     "url": "https://doi.org/10.5430/wje.v16n1p46",
-    "topics": "ai generative ai digital competency ครู ดิจิทัล ปัญญาประดิษฐ์"
+    "topics": "ai generative ai digital competency ครู ดิจิทัล ปัญญาประดิษฐ์",
+    "category_th": "ปัญญาประดิษฐ์เชิงสร้างสรรค์ · สมรรถนะดิจิทัล",
+    "category_en": "Generative AI · Digital competency"
   },
   {
     "year": 2025,
@@ -27,7 +31,9 @@
     "category": "AI learning environment · Programming",
     "citation": "Higher Education Studies, 15(4), 312–332.",
     "url": "https://doi.org/10.5539/hes.v15n4p312",
-    "topics": "ai programming design thinking caile ปัญญาประดิษฐ์ การเขียนโปรแกรม"
+    "topics": "ai programming design thinking caile ปัญญาประดิษฐ์ การเขียนโปรแกรม",
+    "category_th": "สภาพแวดล้อมการเรียนรู้ด้วย AI · การเขียนโปรแกรม",
+    "category_en": "AI learning environment · Programming"
   },
   {
     "year": 2025,
@@ -37,7 +43,9 @@
     "category": "Digital literacy · Remote learning",
     "citation": "Higher Education Studies, 15(2), 54–72.",
     "url": "https://doi.org/10.5539/hes.v15n2p54",
-    "topics": "digital literacy remote learning ความฉลาดรู้ดิจิทัล การเรียนรู้ทางไกล"
+    "topics": "digital literacy remote learning ความฉลาดรู้ดิจิทัล การเรียนรู้ทางไกล",
+    "category_th": "ความฉลาดรู้ดิจิทัล · การเรียนรู้ทางไกล",
+    "category_en": "Digital literacy · Remote learning"
   },
   {
     "year": 2023,
@@ -47,7 +55,9 @@
     "category": "Mascot · Storytelling",
     "citation": "การประชุมวิชาการสวนดุสิต 2023 ครั้งที่ 5 · หน้า 768\n9 มิถุนายน 2566",
     "url": "",
-    "topics": "mascot storytelling ตัวละคร ผ้าทอ"
+    "topics": "mascot storytelling ตัวละคร ผ้าทอ",
+    "category_th": "มาสคอต · การเล่าเรื่อง",
+    "category_en": "Mascot · Storytelling"
   },
   {
     "year": 2022,
@@ -57,7 +67,9 @@
     "category": "Information system · Academic advising",
     "citation": "การประชุมวิชาการราชมงคลสุรินทร์ ครั้งที่ 13 · หน้า G335–G345\n17–18 พฤศจิกายน 2565",
     "url": "",
-    "topics": "ระบบ อาจารย์ที่ปรึกษา information system"
+    "topics": "ระบบ อาจารย์ที่ปรึกษา information system",
+    "category_th": "ระบบสารสนเทศ · อาจารย์ที่ปรึกษา",
+    "category_en": "Information system · Academic advising"
   },
   {
     "year": 2018,
@@ -67,6 +79,8 @@
     "category": "Statistical software · Technology transfer",
     "citation": "PULINET Journal, 5(3), 31–38.",
     "url": "https://pulinet.oas.psu.ac.th/index.php/journal/article/view/330",
-    "topics": "สถิติ โปรแกรม นักศึกษา statistical analysis"
+    "topics": "สถิติ โปรแกรม นักศึกษา statistical analysis",
+    "category_th": "ซอฟต์แวร์สถิติ · การถ่ายทอดเทคโนโลยี",
+    "category_en": "Statistical software · Technology transfer"
   }
 ]

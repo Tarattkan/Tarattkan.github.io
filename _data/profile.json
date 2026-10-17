@@ -10,12 +10,18 @@
   "roles": [
     {
       "period": "พ.ศ. 2563 – ปัจจุบัน",
-      "title": "ประธานหลักสูตรคอมพิวเตอร์ธุรกิจ"
+      "title": "ประธานหลักสูตรคอมพิวเตอร์ธุรกิจ",
+      "period_en": "2020 – Present",
+      "title_en": "Chair of the Business Computer Program",
+      "detail_en": ""
     },
     {
       "period": "พ.ศ. 2557 – ปัจจุบัน",
       "title": "อาจารย์ประจำ",
-      "detail": "สาขาเทคโนโลยีสารสนเทศและมัลติมีเดีย\nคณะเทคโนโลยีการจัดการ"
+      "detail": "สาขาเทคโนโลยีสารสนเทศและมัลติมีเดีย\nคณะเทคโนโลยีการจัดการ",
+      "period_en": "2014 – Present",
+      "title_en": "Lecturer",
+      "detail_en": "Information Technology and Multimedia\nFaculty of Management Technology"
     }
   ],
   "education": [
@@ -24,21 +30,33 @@
       "field": "สาขาเทคโนโลยีสารสนเทศและการสื่อสารเพื่อการศึกษา",
       "institution": "มหาวิทยาลัยราชภัฏมหาสารคาม",
       "country": "ประเทศไทย",
-      "year": 2569
+      "year": 2569,
+      "degree_en": "Ph.D.",
+      "field_en": "Information and Communication Technology for Education",
+      "institution_en": "Rajabhat Maha Sarakham University",
+      "country_en": "Thailand"
     },
     {
       "degree": "ค.อ.ม.",
       "field": "คอมพิวเตอร์และเทคโนโลยีสารสนเทศ",
       "institution": "มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี",
       "country": "ประเทศไทย",
-      "year": 2557
+      "year": 2557,
+      "degree_en": "Master’s degree (ค.อ.ม.)",
+      "field_en": "Computer and Information Technology",
+      "institution_en": "King Mongkut’s University of Technology Thonburi",
+      "country_en": "Thailand"
     },
     {
       "degree": "วท.บ.",
       "field": "เทคโนโลยีสารสนเทศ",
       "institution": "มหาวิทยาลัยราชภัฏมหาสารคาม",
       "country": "ประเทศไทย",
-      "year": 2552
+      "year": 2552,
+      "degree_en": "B.Sc.",
+      "field_en": "Information Technology",
+      "institution_en": "Rajabhat Maha Sarakham University",
+      "country_en": "Thailand"
     }
   ],
   "contact_intro": "ช่องทางติดต่อด้านวิชาการ\nการเรียนการสอน และงานวิจัย",
@@ -49,5 +67,12 @@
   "facebook": "https://www.facebook.com/comra357",
   "github": "https://github.com/Tarattkan",
   "scholar": "https://scholar.google.com/citations?user=oPhxu7AAAAAJ&hl=th",
-  "meta_description": "เว็บไซต์วิชาการของ สิบเอก ดร.ถรัฐการ ประชุมวรรณ อาจารย์มหาวิทยาลัยเทคโนโลยีราชมงคลอีสาน วิทยาเขตสุรินทร์ รวบรวมประวัติ ผลงานวิจัย และความเชี่ยวชาญด้านเทคโนโลยีสารสนเทศและการเรียนรู้"
+  "meta_description": "เว็บไซต์วิชาการของ สิบเอก ดร.ถรัฐการ ประชุมวรรณ อาจารย์มหาวิทยาลัยเทคโนโลยีราชมงคลอีสาน วิทยาเขตสุรินทร์ รวบรวมประวัติ ผลงานวิจัย และความเชี่ยวชาญด้านเทคโนโลยีสารสนเทศและการเรียนรู้",
+  "hero_intro_en": "Technology for learning and research",
+  "affiliation_short_en": "Rajamangala University of Technology Isan\nSurin Campus",
+  "biography_en": "Lecturer in Information Technology and Multimedia\nFaculty of Management Technology, Rajamangala University of Technology Isan, Surin Campus",
+  "photo_alt_en": "Sgt. Dr. Tarattakan Pachumwon",
+  "contact_intro_en": "Get in touch about academic work,\nteaching, and research",
+  "contact_affiliation_en": "Information Technology and Multimedia\nFaculty of Management Technology\nRajamangala University of Technology Isan, Surin Campus",
+  "meta_description_en": "Academic website of Sgt. Dr. Tarattakan Pachumwon, lecturer at Rajamangala University of Technology Isan, Surin Campus. Biography, education, publications, and expertise in information technology and learning."
 }
