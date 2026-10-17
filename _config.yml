@@ -1,0 +1,12 @@
+title: Tarattakan Pachumwon
+url: ""
+baseurl: ""
+encoding: utf-8
+exclude:
+  - README.md
+  - ADMIN_SETUP.md
+  - tools
+  - testing
+  - deliverables
+  - .pages.yml
+  - .browser

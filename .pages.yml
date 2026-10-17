@@ -1,0 +1,268 @@
+media:
+  input: assets/uploads
+  output: /assets/uploads
+  extensions:
+  - jpg
+  - jpeg
+  - png
+  - webp
+  rename: safe
+content:
+- name: profile
+  label: ประวัติ รูปภาพ และช่องทางติดต่อ
+  type: file
+  path: _data/profile.json
+  format: json
+  fields:
+  - name: first_name_en
+    label: ชื่อภาษาอังกฤษ
+    type: string
+    required: true
+  - name: last_name_en
+    label: นามสกุลภาษาอังกฤษ
+    type: string
+    required: true
+  - name: name_th
+    label: ชื่อและคำนำหน้าภาษาไทย
+    type: string
+    required: true
+  - name: hero_intro
+    label: ข้อความแนะนำหน้าแรก
+    type: string
+    required: true
+  - name: affiliation_short
+    label: สังกัดสำหรับหน้าแรก
+    type: text
+    required: true
+  - name: biography
+    label: ประวัติและสังกัด
+    type: text
+    required: true
+  - name: photo
+    label: รูปโปรไฟล์
+    type: image
+    required: true
+    options:
+      extensions:
+      - jpg
+      - jpeg
+      - png
+      - webp
+  - name: photo_alt
+    label: คำอธิบายรูปสำหรับการเข้าถึง
+    type: string
+    required: true
+  - name: roles
+    label: บทบาททางวิชาการ
+    type: object
+    required: true
+    list:
+      collapsible:
+        collapsed: true
+        summary: '{title}'
+    fields:
+    - name: period
+      label: ช่วงเวลา
+      type: string
+      required: true
+    - name: title
+      label: บทบาท/ตำแหน่ง
+      type: string
+      required: true
+    - name: detail
+      label: รายละเอียด
+      type: text
+      required: false
+  - name: contact_intro
+    label: ข้อความส่วนติดต่อ
+    type: text
+    required: true
+  - name: contact_affiliation
+    label: สังกัดและที่ติดต่อ
+    type: text
+    required: true
+  - name: email
+    label: อีเมล
+    type: string
+    required: true
+    pattern:
+      regex: ^[^@\s]+@[^@\s]+\.[^@\s]+$
+      message: ใส่อีเมลที่ถูกต้อง
+  - name: facebook
+    label: Facebook
+    type: string
+    required: true
+    pattern:
+      regex: ^https://[^\s]+$
+      message: ใส่ลิงก์ HTTPS ที่ถูกต้อง หรือเว้นว่างหากยังไม่มีลิงก์
+  - name: github
+    label: GitHub
+    type: string
+    required: true
+    pattern:
+      regex: ^https://[^\s]+$
+      message: ใส่ลิงก์ HTTPS ที่ถูกต้อง หรือเว้นว่างหากยังไม่มีลิงก์
+  - name: scholar
+    label: Google Scholar
+    type: string
+    required: true
+    pattern:
+      regex: ^https://[^\s]+$
+      message: ใส่ลิงก์ HTTPS ที่ถูกต้อง หรือเว้นว่างหากยังไม่มีลิงก์
+  - name: meta_description
+    label: คำอธิบายเว็บไซต์สำหรับผลการค้นหา
+    type: text
+    required: true
+- name: interests
+  label: ความสนใจด้านการวิจัยจาก Google Scholar
+  type: file
+  path: _data/interests.json
+  format: json
+  fields:
+  - name: information_technology
+    label: Information Technology
+    type: object
+    required: true
+    fields:
+    - name: title_th
+      label: ชื่อหัวข้อภาษาไทย
+      type: string
+      required: true
+    - name: title_en
+      label: ชื่อหัวข้อภาษาอังกฤษ
+      type: string
+      required: true
+  - name: ai
+    label: AI
+    type: object
+    required: true
+    fields:
+    - name: title_th
+      label: ชื่อหัวข้อภาษาไทย
+      type: string
+      required: true
+    - name: title_en
+      label: ชื่อหัวข้อภาษาอังกฤษ
+      type: string
+      required: true
+  - name: meta_analysis
+    label: Meta-Analysis
+    type: object
+    required: true
+    fields:
+    - name: title_th
+      label: ชื่อหัวข้อภาษาไทย
+      type: string
+      required: true
+    - name: title_en
+      label: ชื่อหัวข้อภาษาอังกฤษ
+      type: string
+      required: true
+  - name: education
+    label: Education
+    type: object
+    required: true
+    fields:
+    - name: title_th
+      label: ชื่อหัวข้อภาษาไทย
+      type: string
+      required: true
+    - name: title_en
+      label: ชื่อหัวข้อภาษาอังกฤษ
+      type: string
+      required: true
+  - name: bibliometric_analysis
+    label: Bibliometric Analysis
+    type: object
+    required: true
+    fields:
+    - name: title_th
+      label: ชื่อหัวข้อภาษาไทย
+      type: string
+      required: true
+    - name: title_en
+      label: ชื่อหัวข้อภาษาอังกฤษ
+      type: string
+      required: true
+- name: teaching
+  label: งานสอนและความเชี่ยวชาญ
+  type: file
+  path: _data/teaching.json
+  format: json
+  fields:
+  - name: intro
+    label: ข้อความแนะนำงานสอน
+    type: text
+    required: true
+  - name: expertise
+    label: ความเชี่ยวชาญ
+    type: object
+    required: true
+    list:
+      collapsible:
+        collapsed: true
+        summary: '{title_th}'
+    fields:
+    - name: title_th
+      label: ภาษาไทย
+      type: string
+      required: true
+    - name: title_en
+      label: ภาษาอังกฤษ
+      type: string
+      required: true
+- name: publications
+  label: ผลงานวิจัยและบทความ
+  type: file
+  path: _data/publications.json
+  format: json
+  fields:
+  - name: year
+    label: ปี ค.ศ.
+    type: number
+    required: true
+  - name: type
+    label: ประเภท
+    type: select
+    required: true
+    options:
+      values:
+      - name: journal
+        label: วารสาร
+      - name: conference
+        label: ประชุมวิชาการ
+  - name: title
+    label: ชื่อบทความ
+    type: text
+    required: true
+  - name: language
+    label: ภาษาชื่อบทความ
+    type: select
+    required: true
+    options:
+      values:
+      - name: th
+        label: ไทย
+      - name: en
+        label: English
+  - name: category
+    label: หัวข้อย่อยที่แสดงเหนือชื่อบทความ
+    type: string
+    required: true
+  - name: citation
+    label: วารสาร/การประชุม เล่ม ฉบับ หน้า และวันที่
+    type: text
+    required: true
+  - name: url
+    label: ลิงก์บทความ / DOI (ถ้ามี)
+    type: string
+    required: false
+    pattern:
+      regex: ^(https://[^\s]+)?$
+      message: ใส่ลิงก์ HTTPS ที่ถูกต้อง หรือเว้นว่างหากยังไม่มีลิงก์
+  - name: topics
+    label: คำสำคัญสำหรับค้นหา
+    type: string
+    required: false
+    description: คั่นคำด้วยช่องว่าง ใช้ได้ทั้งไทยและอังกฤษ
+  list: true
