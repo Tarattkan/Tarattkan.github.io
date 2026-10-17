@@ -135,7 +135,7 @@
           <p>{{ site.data.profile.biography | escape | newline_to_br }}</p>
           <div class="timeline">
             {% for role in site.data.profile.roles %}
-            <div class="timeline-item"><p class="timeline-year">{{ role.period | escape }}</p><h3>{{ role.title | escape }}</h3>{% if role.detail != blank %}<p>{{ role.detail | escape | newline_to_br }}</p>{% endif %}</div>
+            <div class="timeline-item"><p class="timeline-year">{{ role.period | escape }}</p><h3>{{ role.title | escape }}</h3>{% if role.detail and role.detail != "" %}<p>{{ role.detail | escape | newline_to_br }}</p>{% endif %}</div>
             {% endfor %}
           </div>
           <a class="text-link" href="#contact">ช่องทางติดต่อ <span aria-hidden="true">↗</span></a>
@@ -167,9 +167,9 @@
           <article class="publication" data-type="{{ publication.type | escape }}" data-topic="{{ publication.topics | escape }}">
             <div class="pub-year">{{ publication.year | escape }}<span>{% if publication.type == "journal" %}วารสาร{% else %}ประชุมวิชาการ{% endif %}</span></div>
             <div class="pub-detail"><p class="pub-category">{{ publication.category | escape }}</p>
-              <h3 lang="{{ publication.language | escape }}">{% if publication.url != blank %}<a href="{{ publication.url | escape }}" target="_blank" rel="noopener noreferrer">{{ publication.title | escape }}</a>{% else %}{{ publication.title | escape }}{% endif %}</h3>
+              <h3 lang="{{ publication.language | escape }}">{% if publication.url and publication.url != "" %}<a href="{{ publication.url | escape }}" target="_blank" rel="noopener noreferrer">{{ publication.title | escape }}</a>{% else %}{{ publication.title | escape }}{% endif %}</h3>
               <p class="pub-journal">{{ publication.citation | escape | newline_to_br }}</p>
-              {% if publication.url != blank %}<a class="paper-link" href="{{ publication.url | escape }}" target="_blank" rel="noopener noreferrer" aria-label="อ่าน {{ publication.title | escape }} (เปิดแท็บใหม่)">อ่านบทความ <span aria-hidden="true">↗</span></a>{% else %}<p class="paper-unavailable">ยังไม่มีลิงก์ฉบับออนไลน์</p>{% endif %}
+              {% if publication.url and publication.url != "" %}<a class="paper-link" href="{{ publication.url | escape }}" target="_blank" rel="noopener noreferrer" aria-label="อ่าน {{ publication.title | escape }} (เปิดแท็บใหม่)">อ่านบทความ <span aria-hidden="true">↗</span></a>{% else %}<p class="paper-unavailable">ยังไม่มีลิงก์ฉบับออนไลน์</p>{% endif %}
             </div>
           </article>
           {% endfor %}
