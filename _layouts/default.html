@@ -4,32 +4,37 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#102c42">
-  <title>{{ site.data.profile.name_th | escape }} | {{ site.data.profile.first_name_en | escape }} {{ site.data.profile.last_name_en | escape }}</title>
-  <meta name="description" content="{{ site.data.profile.meta_description | escape }}">
+  <title data-en="{{ site.data.profile.first_name_en | escape }} {{ site.data.profile.last_name_en | escape }} | Academic Portfolio">{{ site.data.profile.name_th | escape }} | {{ site.data.profile.first_name_en | escape }} {{ site.data.profile.last_name_en | escape }}</title>
+  <meta name="description" content="{{ site.data.profile.meta_description | escape }}" data-content-en="{{ site.data.profile.meta_description_en | default: site.data.profile.meta_description | escape }}">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="{{ site.data.profile.first_name_en | escape }} {{ site.data.profile.last_name_en | escape }} — Academic Portfolio">
-  <meta property="og:description" content="เทคโนโลยีเพื่อการเรียนรู้และการวิจัย · RMUTI Surin Campus">
+  <meta property="og:title" content="{{ site.data.profile.name_th | escape }} | เว็บไซต์วิชาการ" data-content-en="{{ site.data.profile.first_name_en | escape }} {{ site.data.profile.last_name_en | escape }} | Academic Portfolio">
+  <meta property="og:description" content="{{ site.data.profile.meta_description | escape }}" data-content-en="{{ site.data.profile.meta_description_en | default: site.data.profile.meta_description | escape }}">
+  <meta property="og:locale" content="th_TH" data-content-en="en_US">
   <link rel="icon" href="{{ "/assets/monogram.svg" | relative_url }}" type="image/svg+xml">
-  <link rel="stylesheet" href="{{ "/styles.css" | relative_url }}?v=20261017-admin">
-  <script src="{{ "/script.js" | relative_url }}" defer></script>
+  <link rel="stylesheet" href="{{ "/styles.css" | relative_url }}?v=20261017-bilingual">
+  <script src="{{ "/script.js" | relative_url }}?v=20261017-bilingual" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#main">ข้ามไปยังเนื้อหา</a>
+  <a class="skip-link" href="#main" data-en="Skip to content">ข้ามไปยังเนื้อหา</a>
   <header class="site-header">
     <div class="shell header-inner">
-      <a class="brand" href="#home" aria-label="{{ site.data.profile.first_name_en | escape }} {{ site.data.profile.last_name_en | escape }} หน้าแรก">
+      <a class="brand" href="#home" aria-label="{{ site.data.profile.first_name_en | escape }} {{ site.data.profile.last_name_en | escape }} หน้าแรก" data-aria-label-en="{{ site.data.profile.first_name_en | escape }} {{ site.data.profile.last_name_en | escape }} home">
         <img src="{{ "/assets/monogram.svg" | relative_url }}" width="48" height="48" alt="">
         <span>{{ site.data.profile.first_name_en | escape }} <span class="brand-surname">{{ site.data.profile.last_name_en | escape }}</span></span>
       </a>
+      <div class="language-switch" role="group" aria-label="เลือกภาษา" data-aria-label-en="Choose language" hidden>
+        <button type="button" data-language="th" lang="th" aria-pressed="true">ไทย</button>
+        <button type="button" data-language="en" lang="en" aria-pressed="false">English</button>
+      </div>
       <button class="menu-toggle" type="button" hidden aria-expanded="false" aria-controls="main-nav" aria-label="เปิดเมนูหลัก">
-        <span></span><span></span><span class="sr-only">เมนู</span>
+        <span></span><span></span><span class="sr-only" data-en="Menu">เมนู</span>
       </button>
-      <nav class="main-nav" id="main-nav" aria-label="เมนูหลัก">
-        <a class="active" href="#home" aria-current="location">หน้าแรก</a>
-        <a href="#about">ประวัติ</a>
-        <a href="#research">ผลงานวิจัย</a>
-        <a href="#teaching">งานสอน</a>
-        <a href="#contact">ติดต่อ</a>
+      <nav class="main-nav" id="main-nav" aria-label="เมนูหลัก" data-aria-label-en="Main navigation">
+        <a class="active" href="#home" aria-current="location" data-en="Home">หน้าแรก</a>
+        <a href="#about" data-en="About">ประวัติ</a>
+        <a href="#research" data-en="Publications">ผลงานวิจัย</a>
+        <a href="#teaching" data-en="Teaching">งานสอน</a>
+        <a href="#contact" data-en="Contact">ติดต่อ</a>
       </nav>
     </div>
   </header>
@@ -38,16 +43,16 @@
     <section class="hero" id="home" aria-labelledby="hero-title">
       <div class="shell hero-inner">
         <div class="hero-copy">
-          <p class="eyebrow">Academic portfolio</p>
+          <p class="eyebrow" data-en="Academic portfolio">เว็บไซต์วิชาการ</p>
           <h1 id="hero-title" lang="en">{{ site.data.profile.first_name_en | escape }}<br>{{ site.data.profile.last_name_en | escape }}<span class="gold-dot">.</span></h1>
-          <p class="thai-name">{{ site.data.profile.name_th | escape }}</p>
-          <p class="hero-intro">{{ site.data.profile.hero_intro | escape }}</p>
-          <p class="hero-affiliation">{{ site.data.profile.affiliation_short | escape | newline_to_br }}</p>
+          <p class="thai-name" data-en="{{ site.data.profile.first_name_en | escape }} {{ site.data.profile.last_name_en | escape }}">{{ site.data.profile.name_th | escape }}</p>
+          <p class="hero-intro" data-en="{{ site.data.profile.hero_intro_en | default: site.data.profile.hero_intro | escape }}">{{ site.data.profile.hero_intro | escape }}</p>
+          <p class="hero-affiliation" data-en="{{ site.data.profile.affiliation_short_en | default: site.data.profile.affiliation_short | escape }}">{{ site.data.profile.affiliation_short | escape }}</p>
           <div class="hero-actions">
-            <a class="button button-gold" href="#research">ผลงานวิจัย <span aria-hidden="true">→</span></a>
-            <a class="button button-outline" href="#about">รู้จักเพิ่มเติม <span aria-hidden="true">→</span></a>
+            <a class="button button-gold" href="#research"><span data-en="Publications">ผลงานวิจัย</span> <span aria-hidden="true">→</span></a>
+            <a class="button button-outline" href="#about"><span data-en="About me">รู้จักเพิ่มเติม</span> <span aria-hidden="true">→</span></a>
           </div>
-          <p class="hero-caption" lang="en">Research <span>·</span> Teaching <span>·</span> Technology</p>
+          <p class="hero-caption" data-en="Research · Teaching · Technology">วิจัย · การสอน · เทคโนโลยี</p>
         </div>
         <div class="hero-art" aria-hidden="true">
           <svg class="orbital-art" viewBox="0 0 580 650" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -89,33 +94,33 @@
     <section class="interests section" aria-labelledby="interests-title">
       <div class="shell">
         <div class="section-heading">
-          <div><p class="eyebrow">Research interests</p><h2 id="interests-title">ความสนใจด้านการวิจัย</h2></div>
-          <p class="section-note">หัวข้อความสนใจจาก Google Scholar</p>
+          <div><p class="eyebrow" data-en="Research interests">งานวิจัย</p><h2 id="interests-title" data-en="Research interests">ความสนใจด้านการวิจัย</h2></div>
+          <p class="section-note" data-en="Research interests from Google Scholar">หัวข้อความสนใจจาก Google Scholar</p>
         </div>
         <div class="interest-grid">
           <article class="interest-card">
             <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><rect x="7" y="7" width="34" height="25" rx="2"/><path d="M3 39H45M17 32L15 39M31 32L33 39M18 16L13 20L18 24M30 16L35 20L30 24M26 14L22 26"/></svg>
-            <h3 class="thai-topic">{{ site.data.interests.information_technology.title_th | escape }}</h3>
+            <h3 class="thai-topic" data-en="{{ site.data.interests.information_technology.title_en | default: site.data.interests.information_technology.title_th | escape }}">{{ site.data.interests.information_technology.title_th | escape }}</h3>
             <p class="topic-english" lang="en">{{ site.data.interests.information_technology.title_en | escape }}</p>
           </article>
           <article class="interest-card">
             <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M13 41V32C8 28 7 23 8 18C9 9 17 5 25 6C34 7 39 13 39 21L43 28H36V38H27V43M19 18L25 23L31 16M25 23V32"/><circle cx="18" cy="16" r="3"/><circle cx="32" cy="13" r="3"/><circle cx="25" cy="25" r="3"/></svg>
-            <h3 class="thai-topic">{{ site.data.interests.ai.title_th | escape }}</h3>
+            <h3 class="thai-topic" data-en="{{ site.data.interests.ai.title_en | default: site.data.interests.ai.title_th | escape }}">{{ site.data.interests.ai.title_th | escape }}</h3>
             <p class="topic-english" lang="en">{{ site.data.interests.ai.title_en | escape }}</p>
           </article>
           <article class="interest-card">
             <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><rect x="4" y="6" width="11" height="9" rx="1"/><rect x="19" y="6" width="11" height="9" rx="1"/><rect x="34" y="6" width="10" height="9" rx="1"/><path d="M9 15V23H39V15M24 15V32M19 28L24 33L29 28"/><rect x="14" y="33" width="20" height="10" rx="1"/></svg>
-            <h3 class="thai-topic">{{ site.data.interests.meta_analysis.title_th | escape }}</h3>
+            <h3 class="thai-topic" data-en="{{ site.data.interests.meta_analysis.title_en | default: site.data.interests.meta_analysis.title_th | escape }}">{{ site.data.interests.meta_analysis.title_th | escape }}</h3>
             <p class="topic-english" lang="en">{{ site.data.interests.meta_analysis.title_en | escape }}</p>
           </article>
           <article class="interest-card">
             <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M24 11C17 6 10 6 5 8V37C12 35 18 36 24 40M24 11C31 6 38 6 43 8V37C36 35 30 36 24 40M24 11V40M10 15C13 14 17 15 20 17M10 22C13 21 17 22 20 24M28 17C31 15 35 14 38 15M28 24C31 22 35 21 38 22"/></svg>
-            <h3 class="thai-topic">{{ site.data.interests.education.title_th | escape }}</h3>
+            <h3 class="thai-topic" data-en="{{ site.data.interests.education.title_en | default: site.data.interests.education.title_th | escape }}">{{ site.data.interests.education.title_th | escape }}</h3>
             <p class="topic-english" lang="en">{{ site.data.interests.education.title_en | escape }}</p>
           </article>
           <article class="interest-card">
             <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M7 7V41H43M14 33V23H20V33M25 33V17H31V33M36 33V10H42V33M12 15L23 9L31 12L40 5"/></svg>
-            <h3 class="thai-topic">{{ site.data.interests.bibliometric_analysis.title_th | escape }}</h3>
+            <h3 class="thai-topic" data-en="{{ site.data.interests.bibliometric_analysis.title_en | default: site.data.interests.bibliometric_analysis.title_th | escape }}">{{ site.data.interests.bibliometric_analysis.title_th | escape }}</h3>
             <p class="topic-english" lang="en">{{ site.data.interests.bibliometric_analysis.title_en | escape }}</p>
           </article>
         </div>
@@ -125,30 +130,30 @@
     <section class="about section" id="about" aria-labelledby="about-title">
       <div class="shell about-grid">
         <div class="profile-column">
-          <div class="portrait-frame"><img src="{{ site.data.profile.photo | relative_url | escape }}" alt="{{ site.data.profile.photo_alt | escape }}" width="298" height="392" loading="lazy"></div>
+          <div class="portrait-frame"><img src="{{ site.data.profile.photo | relative_url | escape }}" alt="{{ site.data.profile.photo_alt | escape }}" data-alt-en="{{ site.data.profile.photo_alt_en | default: site.data.profile.photo_alt | escape }}" width="298" height="392" loading="lazy"></div>
           <div class="portrait-caption"><span class="tiny-line"></span><span lang="en">{{ site.data.profile.first_name_en | escape }} {{ site.data.profile.last_name_en | escape }}</span></div>
         </div>
         <div class="about-copy">
-          <p class="eyebrow">About</p>
-          <h2 id="about-title">ประวัติและบทบาททางวิชาการ</h2>
-          <p class="about-name">{{ site.data.profile.name_th | escape }}</p>
-          <p>{{ site.data.profile.biography | escape | newline_to_br }}</p>
+          <p class="eyebrow" data-en="About">เกี่ยวกับ</p>
+          <h2 id="about-title" data-en="Biography &amp; academic roles">ประวัติและบทบาททางวิชาการ</h2>
+          <p class="about-name" data-en="{{ site.data.profile.first_name_en | escape }} {{ site.data.profile.last_name_en | escape }}">{{ site.data.profile.name_th | escape }}</p>
+          <p class="multiline" data-en="{{ site.data.profile.biography_en | default: site.data.profile.biography | escape }}">{{ site.data.profile.biography | escape }}</p>
           <div class="timeline">
             {% for role in site.data.profile.roles %}
-            <div class="timeline-item"><p class="timeline-year">{{ role.period | escape }}</p><h3>{{ role.title | escape }}</h3>{% if role.detail and role.detail != "" %}<p>{{ role.detail | escape | newline_to_br }}</p>{% endif %}</div>
+            <div class="timeline-item"><p class="timeline-year" data-en="{{ role.period_en | default: role.period | escape }}">{{ role.period | escape }}</p><h3 data-en="{{ role.title_en | default: role.title | escape }}">{{ role.title | escape }}</h3><p class="multiline" data-en="{{ role.detail_en | default: role.detail | escape }}">{{ role.detail | escape }}</p></div>
             {% endfor %}
           </div>
-          <a class="text-link" href="#contact">ช่องทางติดต่อ <span aria-hidden="true">→</span></a>
+          <a class="text-link" href="#contact"><span data-en="Get in touch">ช่องทางติดต่อ</span> <span aria-hidden="true">→</span></a>
         </div>
       </div>
       <div class="shell education-block" aria-labelledby="education-title">
-        <div class="education-heading"><p class="eyebrow">Education</p><h3 id="education-title">ประวัติการศึกษา</h3></div>
+        <div class="education-heading"><p class="eyebrow" data-en="Education">การศึกษา</p><h3 id="education-title" data-en="Education">ประวัติการศึกษา</h3></div>
         <div class="education-grid">
           {% for education in site.data.profile.education %}
           <article class="education-card">
-            <div class="education-card-header"><p class="education-degree">{{ education.degree | escape }}</p><p class="education-year">พ.ศ. {{ education.year | escape }}</p></div>
-            <h4>{{ education.field | escape }}</h4>
-            <p class="education-institution">{{ education.institution | escape }}<br>{{ education.country | escape }}</p>
+            <div class="education-card-header"><p class="education-degree" data-en="{{ education.degree_en | default: education.degree | escape }}">{{ education.degree | escape }}</p><p class="education-year" data-en="{{ education.year | minus: 543 | escape }}">พ.ศ. {{ education.year | escape }}</p></div>
+            <h4 data-en="{{ education.field_en | default: education.field | escape }}">{{ education.field | escape }}</h4>
+            <p class="education-institution"><span data-en="{{ education.institution_en | default: education.institution | escape }}">{{ education.institution | escape }}</span><br><span data-en="{{ education.country_en | default: education.country | escape }}">{{ education.country | escape }}</span></p>
           </article>
           {% endfor %}
         </div>
@@ -158,44 +163,44 @@
     <section class="research section" id="research" aria-labelledby="research-title">
       <div class="shell">
         <div class="section-heading research-heading">
-          <div><p class="eyebrow">Publications</p><h2 id="research-title">ผลงานวิจัยและบทความวิชาการ</h2></div>
-          <div class="research-meta"><p class="section-note">บทความวารสารและผลงานประชุมวิชาการ</p><a class="scholar-link" href="{{ site.data.profile.scholar | escape }}" target="_blank" rel="noopener noreferrer" aria-label="โปรไฟล์ Google Scholar ของ {{ site.data.profile.first_name_en | escape }} {{ site.data.profile.last_name_en | escape }} (เปิดแท็บใหม่)">Google Scholar <span aria-hidden="true">→</span></a></div>
+          <div><p class="eyebrow" data-en="Publications">ผลงานวิชาการ</p><h2 id="research-title" data-en="Research &amp; publications">ผลงานวิจัยและบทความวิชาการ</h2></div>
+          <div class="research-meta"><p class="section-note" data-en="Journal articles and conference papers">บทความวารสารและผลงานประชุมวิชาการ</p><a class="scholar-link" href="{{ site.data.profile.scholar | escape }}" target="_blank" rel="noopener noreferrer" aria-label="โปรไฟล์ Google Scholar ของ {{ site.data.profile.first_name_en | escape }} {{ site.data.profile.last_name_en | escape }} (เปิดแท็บใหม่)" data-aria-label-en="{{ site.data.profile.first_name_en | escape }} {{ site.data.profile.last_name_en | escape }} on Google Scholar (opens in a new tab)">Google Scholar <span aria-hidden="true">→</span></a></div>
         </div>
         <div class="research-tools" hidden>
-          <div class="filter-group" role="group" aria-label="เลือกประเภทผลงาน">
-            <button type="button" class="filter-button active" data-filter="all" aria-pressed="true">ทั้งหมด <span>{{ site.data.publications | size }}</span></button>
-            <button type="button" class="filter-button" data-filter="journal" aria-pressed="false">วารสาร <span>{{ site.data.publications | where: "type", "journal" | size }}</span></button>
-            <button type="button" class="filter-button" data-filter="conference" aria-pressed="false">ประชุมวิชาการ <span>{{ site.data.publications | where: "type", "conference" | size }}</span></button>
+          <div class="filter-group" role="group" aria-label="เลือกประเภทผลงาน" data-aria-label-en="Filter publications by type">
+            <button type="button" class="filter-button active" data-filter="all" aria-pressed="true"><span data-en="All">ทั้งหมด</span> <span>{{ site.data.publications | size }}</span></button>
+            <button type="button" class="filter-button" data-filter="journal" aria-pressed="false"><span data-en="Journals">วารสาร</span> <span>{{ site.data.publications | where: "type", "journal" | size }}</span></button>
+            <button type="button" class="filter-button" data-filter="conference" aria-pressed="false"><span data-en="Conferences">ประชุมวิชาการ</span> <span>{{ site.data.publications | where: "type", "conference" | size }}</span></button>
           </div>
           <div class="search-field">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg>
-            <label for="publication-search" class="sr-only">ค้นหาชื่อหรือหัวข้อผลงาน</label>
-            <input type="search" id="publication-search" placeholder="ค้นหาชื่อหรือหัวข้อผลงาน" autocomplete="off">
+            <label for="publication-search" class="sr-only" data-en="Search publication titles or topics">ค้นหาชื่อหรือหัวข้อผลงาน</label>
+            <input type="search" id="publication-search" placeholder="ค้นหาชื่อหรือหัวข้อผลงาน" data-placeholder-en="Search titles or topics" autocomplete="off">
           </div>
         </div>
         <p class="result-count" id="result-count" role="status" aria-live="polite" hidden>แสดง {{ site.data.publications | size }} ผลงาน</p>
         <div class="publication-list">
           {% for publication in site.data.publications %}
-          <article class="publication" data-type="{{ publication.type | escape }}" data-topic="{{ publication.topics | escape }}">
-            <div class="pub-year">{{ publication.year | escape }}<span>{% if publication.type == "journal" %}วารสาร{% else %}ประชุมวิชาการ{% endif %}</span></div>
-            <div class="pub-detail"><p class="pub-category">{{ publication.category | escape }}</p>
+          <article class="publication" data-type="{{ publication.type | escape }}" data-topic="{{ publication.topics | escape }}" data-search="{{ publication.title | escape }} {{ publication.citation | escape }} {{ publication.category | escape }} {{ publication.category_th | escape }} {{ publication.category_en | escape }} {{ publication.year | escape }} {{ publication.topics | escape }}">
+            <div class="pub-year">{{ publication.year | escape }}<span data-en="{% if publication.type == "journal" %}Journal{% else %}Conference{% endif %}">{% if publication.type == "journal" %}วารสาร{% else %}ประชุมวิชาการ{% endif %}</span></div>
+            <div class="pub-detail"><p class="pub-category" data-en="{{ publication.category_en | default: publication.category | escape }}">{{ publication.category_th | default: publication.category | escape }}</p>
               <h3 lang="{{ publication.language | escape }}">{% if publication.url and publication.url != "" %}<a href="{{ publication.url | escape }}" target="_blank" rel="noopener noreferrer">{{ publication.title | escape }}</a>{% else %}{{ publication.title | escape }}{% endif %}</h3>
               <p class="pub-journal">{{ publication.citation | escape | newline_to_br }}</p>
-              {% if publication.url and publication.url != "" %}<a class="paper-link" href="{{ publication.url | escape }}" target="_blank" rel="noopener noreferrer" aria-label="อ่าน {{ publication.title | escape }} (เปิดแท็บใหม่)">อ่านบทความ <span aria-hidden="true">→</span></a>{% else %}<p class="paper-unavailable">ยังไม่มีลิงก์ฉบับออนไลน์</p>{% endif %}
+              {% if publication.url and publication.url != "" %}<a class="paper-link" href="{{ publication.url | escape }}" target="_blank" rel="noopener noreferrer" aria-label="อ่าน {{ publication.title | escape }} (เปิดแท็บใหม่)" data-aria-label-en="Read {{ publication.title | escape }} (opens in a new tab)"><span data-en="Read paper">อ่านบทความ</span> <span aria-hidden="true">→</span></a>{% else %}<p class="paper-unavailable" data-en="Online link not yet available">ยังไม่มีลิงก์ฉบับออนไลน์</p>{% endif %}
             </div>
           </article>
           {% endfor %}
         </div>
-        <div class="empty-state" hidden><p>ไม่พบผลงานที่ตรงกับคำค้น</p><button class="text-link" type="button" id="reset-search">แสดงผลงานทั้งหมด <span aria-hidden="true">→</span></button></div>
+        <div class="empty-state" hidden><p data-en="No publications match your search">ไม่พบผลงานที่ตรงกับคำค้น</p><button class="text-link" type="button" id="reset-search"><span data-en="Show all publications">แสดงผลงานทั้งหมด</span> <span aria-hidden="true">→</span></button></div>
       </div>
     </section>
 
     <section class="teaching section" id="teaching" aria-labelledby="teaching-title">
       <div class="shell teaching-grid">
-        <div class="teaching-intro"><p class="eyebrow">Teaching & expertise</p><h2 id="teaching-title">งานสอน<br>และความเชี่ยวชาญ</h2><p>{{ site.data.teaching.intro | escape | newline_to_br }}</p><span class="teaching-mark" aria-hidden="true">{ }</span></div>
+        <div class="teaching-intro"><p class="eyebrow" data-en="Teaching &amp; expertise">งานสอนและความเชี่ยวชาญ</p><h2 id="teaching-title" data-en="Teaching &amp; expertise">งานสอน<br>และความเชี่ยวชาญ</h2><p class="multiline" data-en="{{ site.data.teaching.intro_en | default: site.data.teaching.intro | escape }}">{{ site.data.teaching.intro | escape }}</p><span class="teaching-mark" aria-hidden="true">{ }</span></div>
         <div class="expertise-list">
           {% for skill in site.data.teaching.expertise %}
-          <div class="expertise-item"><span class="expertise-number">{{ forloop.index }}</span><div><h3>{{ skill.title_th | escape }}</h3><p lang="en">{{ skill.title_en | escape }}</p></div></div>
+          <div class="expertise-item"><span class="expertise-number">{{ forloop.index }}</span><div><h3 data-en="{{ skill.title_en | default: skill.title_th | escape }}">{{ skill.title_th | escape }}</h3><p class="expertise-english" lang="en">{{ skill.title_en | escape }}</p></div></div>
           {% endfor %}
         </div>
       </div>
@@ -203,21 +208,21 @@
 
     <section class="contact section" id="contact" aria-labelledby="contact-title">
       <div class="shell contact-grid">
-        <div><p class="eyebrow">Contact</p><h2 id="contact-title">ติดต่อ</h2><p class="contact-intro">{{ site.data.profile.contact_intro | escape | newline_to_br }}</p></div>
+        <div><p class="eyebrow" data-en="Contact">ช่องทางติดต่อ</p><h2 id="contact-title" data-en="Contact">ติดต่อ</h2><p class="contact-intro" data-en="{{ site.data.profile.contact_intro_en | default: site.data.profile.contact_intro | escape }}">{{ site.data.profile.contact_intro | escape }}</p></div>
         <div class="contact-details">
-          <p class="contact-label">อีเมล</p>
-          <div class="email-row"><a class="email-link" href="mailto:{{ site.data.profile.email | escape }}">{{ site.data.profile.email | escape }}</a><button type="button" class="copy-email" title="คัดลอกอีเมล" aria-label="คัดลอกอีเมล" hidden><svg viewBox="0 0 24 24" fill="none" width="20" height="20" aria-hidden="true"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V5A2 2 0 0 0 14 3H5A2 2 0 0 0 3 5V14A2 2 0 0 0 5 16H8"/></svg></button></div>
+          <p class="contact-label" data-en="Email">อีเมล</p>
+          <div class="email-row"><a class="email-link" href="mailto:{{ site.data.profile.email | escape }}">{{ site.data.profile.email | escape }}</a><button type="button" class="copy-email" title="คัดลอกอีเมล" data-title-en="Copy email" aria-label="คัดลอกอีเมล" data-aria-label-en="Copy email" hidden><svg viewBox="0 0 24 24" fill="none" width="20" height="20" aria-hidden="true"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V5A2 2 0 0 0 14 3H5A2 2 0 0 0 3 5V14A2 2 0 0 0 5 16H8"/></svg></button></div>
           <p class="copy-status" role="status" aria-live="polite"></p>
-          <div class="phone-contact"><p class="contact-label">โทรศัพท์</p><a class="phone-link" href="{{ site.data.profile.phone_href | escape }}">{{ site.data.profile.phone | escape }}</a></div>
-          <div class="social-links"><a href="{{ site.data.profile.facebook | escape }}" target="_blank" rel="noopener noreferrer" aria-label="Facebook (เปิดแท็บใหม่)">Facebook <span aria-hidden="true">→</span></a><a href="{{ site.data.profile.github | escape }}" target="_blank" rel="noopener noreferrer" aria-label="GitHub (เปิดแท็บใหม่)">GitHub <span aria-hidden="true">→</span></a></div>
-          <p class="contact-affiliation">{{ site.data.profile.contact_affiliation | escape | newline_to_br }}</p>
+          <div class="phone-contact"><p class="contact-label" data-en="Phone">โทรศัพท์</p><a class="phone-link" href="{{ site.data.profile.phone_href | escape }}">{{ site.data.profile.phone | escape }}</a></div>
+          <div class="social-links"><a href="{{ site.data.profile.facebook | escape }}" target="_blank" rel="noopener noreferrer" aria-label="Facebook (เปิดแท็บใหม่)" data-aria-label-en="Facebook (opens in a new tab)">Facebook <span aria-hidden="true">→</span></a><a href="{{ site.data.profile.github | escape }}" target="_blank" rel="noopener noreferrer" aria-label="GitHub (เปิดแท็บใหม่)" data-aria-label-en="GitHub (opens in a new tab)">GitHub <span aria-hidden="true">→</span></a></div>
+          <p class="contact-affiliation" data-en="{{ site.data.profile.contact_affiliation_en | default: site.data.profile.contact_affiliation | escape }}">{{ site.data.profile.contact_affiliation | escape }}</p>
         </div>
       </div>
     </section>
   </main>
-  <footer class="site-footer"><div class="shell footer-inner"><a class="footer-brand" href="#home">{{ site.data.profile.first_name_en | escape }} {{ site.data.profile.last_name_en | escape }}</a><p>Academic portfolio <span aria-hidden="true">·</span> RMUTI Surin Campus</p><a class="back-top" href="#home">กลับด้านบน <span aria-hidden="true">↑</span></a></div><div class="shell admin-footer">
-    <a class="admin-edit-link" href="https://app.pagescms.org/tarattkan/tarattkan.github.io/main/file/profile" target="_blank" rel="noopener noreferrer" aria-label="เข้าหลังบ้านเพื่อแก้ไขข้อมูล (เปิดแท็บใหม่)" aria-describedby="admin-login-help">เข้าหลังบ้านเพื่อแก้ไขข้อมูล <span aria-hidden="true">→</span></a>
-    <p id="admin-login-help">ล็อกอิน GitHub บัญชี Tarattkan</p>
+  <footer class="site-footer"><div class="shell footer-inner"><a class="footer-brand" href="#home">{{ site.data.profile.first_name_en | escape }} {{ site.data.profile.last_name_en | escape }}</a><p data-en="Academic portfolio · RMUTI Surin Campus">เว็บไซต์วิชาการ · มทร.อีสาน วิทยาเขตสุรินทร์</p><a class="back-top" href="#home"><span data-en="Back to top">กลับด้านบน</span> <span aria-hidden="true">↑</span></a></div><div class="shell admin-footer">
+    <a class="admin-edit-link" href="https://app.pagescms.org/tarattkan/tarattkan.github.io/main/file/profile" target="_blank" rel="noopener noreferrer" aria-label="เข้าหลังบ้านเพื่อแก้ไขข้อมูล (เปิดแท็บใหม่)" data-aria-label-en="Edit website in Pages CMS (opens in a new tab)" aria-describedby="admin-login-help"><span data-en="Edit website">เข้าหลังบ้านเพื่อแก้ไขข้อมูล</span> <span aria-hidden="true">→</span></a>
+    <p id="admin-login-help" data-en="Sign in with the Tarattkan GitHub account">ล็อกอิน GitHub บัญชี Tarattkan</p>
   </div></footer>
 </body>
 </html>
