@@ -383,6 +383,25 @@ content:
     type: text
     required: true
     description: ใช้ข้อมูลอ้างอิงตามต้นฉบับ / Keep the original bibliographic details.
+  - name: authorship
+    label: ลำดับผู้เขียนและบทบาท (ไทย / TH)
+    type: string
+    required: false
+    description: ใช้ลำดับและบทบาทตามบทความต้นฉบับ / Use the author order and role stated in the published article.
+  - name: authorship_en
+    label: ลำดับผู้เขียนและบทบาท (อังกฤษ / EN)
+    type: string
+    required: false
+    description: เว้นว่างเพื่อใช้ข้อความภาษาไทย / Leave blank to use the Thai text.
+  - name: summary
+    label: สรุปหัวข้องานวิจัย (ไทย / TH)
+    type: text
+    required: false
+  - name: summary_en
+    label: สรุปหัวข้องานวิจัย (อังกฤษ / EN)
+    type: text
+    required: false
+    description: เว้นว่างเพื่อใช้ข้อความภาษาไทย / Leave blank to use the Thai text.
   - name: url
     label: ลิงก์บทความ / DOI (ถ้ามี)
     type: string

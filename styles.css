@@ -77,3 +77,8 @@ html[lang=en] .topic-english,html[lang=en] .expertise-english{display:none}html[
 .timeline-item>p:empty{display:none}
 /* Translation labels inherit text styling; only the adjacent arrow/count is decorative. */
 .button span[data-en],.paper-link span[data-en],.filter-button>span[data-en],.back-top span[data-en]{font:inherit;margin:0;opacity:1;color:inherit}
+
+/* Bilingual publication context, October 2026. */
+.pub-authorship{margin-top:10px;color:var(--navy);font-size:12px;font-weight:600;line-height:1.8;overflow-wrap:anywhere}
+.pub-summary{margin-top:7px;color:var(--muted);font-size:13px;line-height:1.9;max-width:74ch;overflow-wrap:anywhere}
+@media(max-width:600px){.pub-authorship{font-size:11px}.pub-summary{font-size:12px}}
