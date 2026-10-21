@@ -13,7 +13,12 @@
     "authorship": "ผู้เขียนลำดับที่ 3",
     "authorship_en": "Third author",
     "summary": "การวิเคราะห์บรรณมิติเพื่อสำรวจภูมิทัศน์งานวิจัยด้านเกมมิฟิเคชันในการเรียนรู้ STEM",
-    "summary_en": "A bibliometric study mapping the research landscape of gamification in STEM education."
+    "summary_en": "A bibliometric study mapping the research landscape of gamification in STEM education.",
+    "cover_image": "/assets/uploads/multidisciplinary-reviews-journal-cover.png",
+    "cover_alt": "ปกวารสาร Multidisciplinary Reviews (ภาพทั่วไป ไม่ระบุฉบับ)",
+    "cover_alt_en": "General cover of Multidisciplinary Reviews (issue not specified)",
+    "cover_caption": "ปกทั่วไปของวารสาร",
+    "cover_caption_en": "General journal cover"
   },
   {
     "year": 2026,
@@ -29,7 +34,12 @@
     "authorship": "ผู้เขียนลำดับที่ 3",
     "authorship_en": "Third author",
     "summary": "แบบจำลองการฝึกอบรมเฉพาะบุคคลที่ใช้ Generative AI เพื่อพัฒนาสมรรถนะดิจิทัลของครู",
-    "summary_en": "A personalized training model enhanced by generative AI to develop teachers’ digital competency."
+    "summary_en": "A personalized training model enhanced by generative AI to develop teachers’ digital competency.",
+    "cover_image": "/assets/uploads/world-journal-education-v16-n1-2026-cover.png",
+    "cover_alt": "ปกวารสาร World Journal of Education ปีที่ 16 ฉบับที่ 1 มีนาคม 2569",
+    "cover_alt_en": "World Journal of Education cover, Volume 16, Number 1, March 2026",
+    "cover_caption": "ปีที่ 16 ฉบับที่ 1 · 2569",
+    "cover_caption_en": "Vol. 16, No. 1 · 2026"
   },
   {
     "year": 2025,
@@ -45,7 +55,12 @@
     "authorship": "ผู้เขียนลำดับที่ 1 · ผู้ประพันธ์บรรณกิจ",
     "authorship_en": "First and corresponding author",
     "summary": "กรอบแนวคิดสภาพแวดล้อมการเรียนรู้ที่บูรณาการการคิดเชิงออกแบบและ Generative AI เพื่อพัฒนาทักษะการเขียนโปรแกรม",
-    "summary_en": "A conceptual learning-environment framework combining design thinking and generative AI to enhance programming skills."
+    "summary_en": "A conceptual learning-environment framework combining design thinking and generative AI to enhance programming skills.",
+    "cover_image": "/assets/uploads/higher-education-studies-journal-cover.png",
+    "cover_alt": "ปกวารสาร Higher Education Studies (ภาพทั่วไป ไม่ระบุฉบับ)",
+    "cover_alt_en": "General cover of Higher Education Studies (issue not specified)",
+    "cover_caption": "ปกทั่วไปของวารสาร",
+    "cover_caption_en": "General journal cover"
   },
   {
     "year": 2025,
@@ -61,7 +76,12 @@
     "authorship": "ผู้เขียนลำดับที่ 1",
     "authorship_en": "First author",
     "summary": "การวิเคราะห์บรรณมิติของงานวิจัยด้านความฉลาดรู้ดิจิทัลในการเรียนรู้ทางไกล",
-    "summary_en": "A bibliometric analysis of research on digital literacy in remote learning."
+    "summary_en": "A bibliometric analysis of research on digital literacy in remote learning.",
+    "cover_image": "/assets/uploads/higher-education-studies-journal-cover.png",
+    "cover_alt": "ปกวารสาร Higher Education Studies (ภาพทั่วไป ไม่ระบุฉบับ)",
+    "cover_alt_en": "General cover of Higher Education Studies (issue not specified)",
+    "cover_caption": "ปกทั่วไปของวารสาร",
+    "cover_caption_en": "General journal cover"
   },
   {
     "year": 2023,
