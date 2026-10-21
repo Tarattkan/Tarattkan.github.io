@@ -74,5 +74,30 @@
   "photo_alt_en": "Sgt. Dr. Tarattakan Pachumwon",
   "contact_intro_en": "Get in touch about academic work,\nteaching, and research",
   "contact_affiliation_en": "Information Technology and Multimedia\nFaculty of Management Technology\nRajamangala University of Technology Isan, Surin Campus",
-  "meta_description_en": "Academic profile of Sgt. Dr. Tarattakan Pachumwon, lecturer at RMUTI Surin Campus. Research in educational technology, generative AI, digital competency, programming education, and bibliometrics."
+  "meta_description_en": "Academic profile of Sgt. Dr. Tarattakan Pachumwon, lecturer at RMUTI Surin Campus. Research in educational technology, generative AI, digital competency, programming education, and bibliometrics.",
+  "orcid": "0009-0000-7953-2066",
+  "professional_highlights": [
+    {
+      "category": "การประเมินการสอน",
+      "category_en": "Teaching evaluation",
+      "title": "ผลการประเมินการจัดการเรียนการสอนระดับดีมาก",
+      "title_en": "Teaching evaluation rated “Very Good”",
+      "detail": "ภาคการศึกษาที่ 2 ปีการศึกษา 2567 ตามประกาศคณะเทคโนโลยีการจัดการ มทร.อีสาน วิทยาเขตสุรินทร์ วันที่ 21 มีนาคม 2568",
+      "detail_en": "Semester 2, academic year 2024 (B.E. 2567), announced by the Faculty of Management Technology, RMUTI Surin Campus, on 21 March 2025.",
+      "source_label": "ประกาศจากคณะเทคโนโลยีการจัดการ",
+      "source_label_en": "Faculty announcement",
+      "source_url": "https://fmt.surin.rmuti.ac.th/2017/Dr.poranee/article/index/readarticle/1/1742545997"
+    },
+    {
+      "category": "บริการวิชาการ",
+      "category_en": "Academic service",
+      "title": "ได้รับการคัดเลือกเป็นผู้ประเมินหลักสูตรเพื่อพัฒนาทักษะดิจิทัลของหน่วยงานภาครัฐ",
+      "title_en": "Selected as an assessor of digital-skills curricula for government agencies",
+      "detail": "ครั้งที่ 2 ประจำปีงบประมาณ 2565 ตามประกาศสถาบันพัฒนาบุคลากรภาครัฐด้านดิจิทัล วันที่ 19 กรกฎาคม 2565",
+      "detail_en": "Second selection round, fiscal year 2022 (B.E. 2565), as listed in the official announcement dated 19 July 2022.",
+      "source_label": "ประกาศรายชื่อผู้ได้รับการคัดเลือก",
+      "source_label_en": "Official selection announcement",
+      "source_url": "https://tacc.bde.go.th/news/approval-expert-list-round-2"
+    }
+  ]
 }
