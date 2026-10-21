@@ -108,6 +108,54 @@ content:
       type: text
       required: false
       description: เว้นว่างเพื่อใช้ข้อความเดิม / Leave blank to use the original text.
+  - name: professional_highlights
+    label: ผลงานด้านการสอนและบริการวิชาการ / Professional highlights
+    type: object
+    required: false
+    list:
+      collapsible:
+        collapsed: true
+        summary: '{title}'
+    fields:
+    - name: category
+      label: หมวดหมู่ (ไทย / TH)
+      type: string
+      required: true
+    - name: category_en
+      label: หมวดหมู่ (อังกฤษ / EN)
+      type: string
+      required: false
+    - name: title
+      label: ชื่อผลงาน (ไทย / TH)
+      type: string
+      required: true
+    - name: title_en
+      label: ชื่อผลงาน (อังกฤษ / EN)
+      type: string
+      required: false
+    - name: detail
+      label: รายละเอียดและวันที่ (ไทย / TH)
+      type: text
+      required: true
+    - name: detail_en
+      label: รายละเอียดและวันที่ (อังกฤษ / EN)
+      type: text
+      required: false
+    - name: source_label
+      label: ชื่อแหล่งอ้างอิง (ไทย / TH)
+      type: string
+      required: true
+    - name: source_label_en
+      label: ชื่อแหล่งอ้างอิง (อังกฤษ / EN)
+      type: string
+      required: false
+    - name: source_url
+      label: ลิงก์แหล่งอ้างอิง / Source URL
+      type: string
+      required: true
+      pattern:
+        regex: ^https://[^\s]+$
+        message: ใส่ลิงก์ HTTPS ของแหล่งข้อมูลต้นฉบับ / Enter an HTTPS link to the primary source.
   - name: education
     label: ประวัติการศึกษา / Education
     type: object
@@ -219,6 +267,14 @@ content:
     pattern:
       regex: ^https://[^\s]+$
       message: ใส่ลิงก์ HTTPS ที่ถูกต้อง หรือเว้นว่างหากยังไม่มีลิงก์
+  - name: orcid
+    label: ORCID iD
+    type: string
+    required: false
+    description: กรอกหมายเลข ORCID ของตนเองที่ตรวจสอบแล้ว (16 หลัก แบ่งด้วยขีด 4 กลุ่ม) เว้นว่างเพื่อไม่แสดง / Enter your verified ORCID iD in four hyphen-separated groups. Leave blank to hide.
+    pattern:
+      regex: ^([0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{3}[0-9X])?$
+      message: ใส่ ORCID iD ที่ถูกต้อง หรือเว้นว่าง / Enter a valid ORCID iD or leave blank.
   - name: meta_description
     label: คำอธิบายเว็บไซต์สำหรับผลการค้นหา (ไทย / TH)
     type: text

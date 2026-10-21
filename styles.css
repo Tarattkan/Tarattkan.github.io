@@ -82,3 +82,17 @@ html[lang=en] .topic-english,html[lang=en] .expertise-english{display:none}html[
 .pub-authorship{margin-top:10px;color:var(--navy);font-size:12px;font-weight:600;line-height:1.8;overflow-wrap:anywhere}
 .pub-summary{margin-top:7px;color:var(--muted);font-size:13px;line-height:1.9;max-width:74ch;overflow-wrap:anywhere}
 @media(max-width:600px){.pub-authorship{font-size:11px}.pub-summary{font-size:12px}}
+
+/* Source-linked public professional highlights and optional ORCID. */
+.professional-block{margin-top:65px;padding-top:42px;border-top:1px solid #ded8cb}
+.professional-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
+.professional-card{min-width:0;padding:25px 26px;background:#fffdf8;border:1px solid #ded8cb;border-top:2px solid #b69a64;display:flex;flex-direction:column;align-items:flex-start}
+.professional-category{font-size:11px;line-height:1.8;color:#89632e;margin-bottom:12px}
+.professional-card h4{font:500 17px/1.8 var(--sans);color:var(--navy);margin-bottom:13px;overflow-wrap:anywhere}
+.professional-detail{font-size:13px;line-height:1.9;color:var(--muted);margin-bottom:18px;overflow-wrap:anywhere}
+.professional-card .text-link{font-size:12px;margin-top:auto;gap:18px;max-width:100%}
+.researcher-id{display:inline-flex;align-items:center;flex-wrap:wrap;gap:9px 12px;max-width:100%;min-height:44px;margin-top:19px;padding:9px 12px;border:1px solid #c7b492;color:var(--navy);font:12px/1.6 Arial,sans-serif;overflow-wrap:anywhere}
+.researcher-id-label{font-weight:700;color:#496b10}.researcher-id:hover{background:#ede6d7;border-color:var(--gold)}
+@media(max-width:820px){.professional-grid{grid-template-columns:1fr;gap:20px}.professional-block{margin-top:48px;padding-top:35px}}
+@media(max-width:600px){.professional-block{margin-top:40px;padding-top:32px}.professional-card{padding:21px 20px}.professional-card h4{font-size:16px}.professional-detail{font-size:12px}}
+@media print{.professional-block{margin-top:24px;padding-top:20px}.professional-card{break-inside:avoid}.researcher-id{border:0;padding-left:0}}
