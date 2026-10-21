@@ -466,6 +466,42 @@ content:
     type: text
     required: false
     description: เว้นว่างเพื่อใช้ข้อความภาษาไทย / Leave blank to use the Thai text.
+  - name: cover_image
+    label: รูปปกวารสาร / Journal cover
+    type: image
+    required: false
+    description: ใช้ปกฉบับที่ตรงกับบทความ หรือระบุให้ชัดว่าเป็นภาพปกวารสารทั่วไป เว้นว่างได้ / Use the matching issue cover, or clearly label a general journal cover. Leave blank when unavailable.
+    options:
+      extensions:
+      - jpg
+      - jpeg
+      - png
+      - webp
+  - name: cover_alt
+    label: คำอธิบายรูปปก (ไทย / TH)
+    type: string
+    required: false
+    description: ระบุชื่อวารสารและฉบับที่ตรงกับภาพ หรือระบุว่าเป็นภาพทั่วไป / Name the journal and matching issue, or label it as a general cover.
+  - name: cover_alt_en
+    label: คำอธิบายรูปปก (อังกฤษ / EN)
+    type: string
+    required: false
+  - name: cover_caption
+    label: ข้อความใต้ปก (ไทย / TH)
+    type: string
+    required: false
+  - name: cover_caption_en
+    label: ข้อความใต้ปก (อังกฤษ / EN)
+    type: string
+    required: false
+  - name: cover_source
+    label: แหล่งที่มาของปก / Cover source
+    type: string
+    required: false
+    description: ลิงก์หน้าฉบับวารสารหรือไฟล์ปกจากสำนักพิมพ์ / Publisher issue page or original cover file.
+    pattern:
+      regex: ^(https://[^\s]+)?$
+      message: ใส่ลิงก์ HTTPS ที่ถูกต้อง หรือเว้นว่าง / Use an HTTPS URL or leave blank.
   - name: url
     label: ลิงก์บทความ / DOI (ถ้ามี)
     type: string
