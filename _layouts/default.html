@@ -11,7 +11,7 @@
   <meta property="og:description" content="{{ site.data.profile.meta_description | escape }}" data-content-en="{{ site.data.profile.meta_description_en | default: site.data.profile.meta_description | escape }}">
   <meta property="og:locale" content="th_TH" data-content-en="en_US">
   <link rel="icon" href="{{ "/assets/monogram.svg" | relative_url }}" type="image/svg+xml">
-  <link rel="stylesheet" href="{{ "/styles.css" | relative_url }}?v=20261017-language-polish">
+  <link rel="stylesheet" href="{{ "/styles.css" | relative_url }}?v=20261021-profile">
   <script src="{{ "/script.js" | relative_url }}?v=20261017-language-polish" defer></script>
 </head>
 <body>
@@ -186,6 +186,8 @@
             <div class="pub-detail"><p class="pub-category" data-en="{{ publication.category_en | default: publication.category | escape }}">{{ publication.category_th | default: publication.category | escape }}</p>
               <h3 lang="{{ publication.language | escape }}">{% if publication.url and publication.url != "" %}<a href="{{ publication.url | escape }}" target="_blank" rel="noopener noreferrer">{{ publication.title | escape }}</a>{% else %}{{ publication.title | escape }}{% endif %}</h3>
               <p class="pub-journal">{{ publication.citation | escape | newline_to_br }}</p>
+              {% if publication.authorship and publication.authorship != "" %}<p class="pub-authorship" data-en="{{ publication.authorship_en | default: publication.authorship | escape }}">{{ publication.authorship | escape }}</p>{% endif %}
+              {% if publication.summary and publication.summary != "" %}<p class="pub-summary" data-en="{{ publication.summary_en | default: publication.summary | escape }}">{{ publication.summary | escape }}</p>{% endif %}
               {% if publication.url and publication.url != "" %}<a class="paper-link" href="{{ publication.url | escape }}" target="_blank" rel="noopener noreferrer" aria-label="อ่าน {{ publication.title | escape }} (เปิดแท็บใหม่)" data-aria-label-en="Read {{ publication.title | escape }} (opens in a new tab)"><span data-en="Read paper">อ่านบทความ</span> <span aria-hidden="true">→</span></a>{% else %}<p class="paper-unavailable" data-en="Online link not yet available">ยังไม่มีลิงก์ฉบับออนไลน์</p>{% endif %}
             </div>
           </article>
