@@ -3,79 +3,30 @@
   "last_name_en": "Pachumwon",
   "name_th": "สิบเอก ดร.ถรัฐการ ประชุมวรรณ",
   "hero_intro": "เทคโนโลยีเพื่อการเรียนรู้และการวิจัย",
+  "hero_intro_en": "Technology for learning and research",
   "affiliation_short": "มหาวิทยาลัยเทคโนโลยีราชมงคลอีสาน\nวิทยาเขตสุรินทร์",
+  "affiliation_short_en": "Rajamangala University of Technology Isan\nSurin Campus",
   "biography": "อาจารย์สังกัดสาขาเทคโนโลยีสารสนเทศและมัลติมีเดีย\nคณะเทคโนโลยีการจัดการ มหาวิทยาลัยเทคโนโลยีราชมงคลอีสาน วิทยาเขตสุรินทร์\n\nผลงานวิจัยครอบคลุมเทคโนโลยีการศึกษา การใช้ Generative AI เพื่อการเรียนรู้ การพัฒนาทักษะการเขียนโปรแกรมและสมรรถนะดิจิทัล ตลอดจนการวิเคราะห์บรรณมิติและการเรียนรู้ทางไกล",
+  "biography_en": "Lecturer in Information Technology and Multimedia\nFaculty of Management Technology, Rajamangala University of Technology Isan, Surin Campus\n\nHis research covers educational technology, generative AI for learning, programming skills and digital competency development, bibliometric analysis, and remote learning.",
   "photo": "/assets/uploads/tarattakan-profile.jpg",
   "photo_alt": "สิบเอก ดร.ถรัฐการ ประชุมวรรณ",
+  "photo_alt_en": "Sgt. Dr. Tarattakan Pachumwon",
   "roles": [
     {
       "period": "พ.ศ. 2563 – ปัจจุบัน",
-      "title": "ประธานหลักสูตรคอมพิวเตอร์ธุรกิจ",
       "period_en": "2020 – Present",
-      "title_en": "Chair of the Business Computer Program",
-      "detail_en": ""
+      "title": "ประธานหลักสูตรคอมพิวเตอร์ธุรกิจ",
+      "title_en": "Chair of the Business Computer Program"
     },
     {
       "period": "พ.ศ. 2557 – ปัจจุบัน",
-      "title": "อาจารย์ประจำ",
-      "detail": "สาขาเทคโนโลยีสารสนเทศและมัลติมีเดีย\nคณะเทคโนโลยีการจัดการ",
       "period_en": "2014 – Present",
+      "title": "อาจารย์ประจำ",
       "title_en": "Lecturer",
+      "detail": "สาขาเทคโนโลยีสารสนเทศและมัลติมีเดีย\nคณะเทคโนโลยีการจัดการ",
       "detail_en": "Information Technology and Multimedia\nFaculty of Management Technology"
     }
   ],
-  "education": [
-    {
-      "degree": "ปร.ด.",
-      "field": "สาขาเทคโนโลยีสารสนเทศและการสื่อสารเพื่อการศึกษา",
-      "institution": "มหาวิทยาลัยราชภัฏมหาสารคาม",
-      "country": "ประเทศไทย",
-      "year": 2569,
-      "degree_en": "Ph.D.",
-      "field_en": "Information and Communication Technology for Education",
-      "institution_en": "Rajabhat Maha Sarakham University",
-      "country_en": "Thailand"
-    },
-    {
-      "degree": "ค.อ.ม.",
-      "field": "คอมพิวเตอร์และเทคโนโลยีสารสนเทศ",
-      "institution": "มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี",
-      "country": "ประเทศไทย",
-      "year": 2557,
-      "degree_en": "Master’s degree (ค.อ.ม.)",
-      "field_en": "Computer and Information Technology",
-      "institution_en": "King Mongkut’s University of Technology Thonburi",
-      "country_en": "Thailand"
-    },
-    {
-      "degree": "วท.บ.",
-      "field": "เทคโนโลยีสารสนเทศ",
-      "institution": "มหาวิทยาลัยราชภัฏมหาสารคาม",
-      "country": "ประเทศไทย",
-      "year": 2552,
-      "degree_en": "B.Sc.",
-      "field_en": "Information Technology",
-      "institution_en": "Rajabhat Maha Sarakham University",
-      "country_en": "Thailand"
-    }
-  ],
-  "contact_intro": "ช่องทางติดต่อด้านวิชาการ\nการเรียนการสอน และงานวิจัย",
-  "contact_affiliation": "สาขาเทคโนโลยีสารสนเทศและมัลติมีเดีย\nคณะเทคโนโลยีการจัดการ\nมหาวิทยาลัยเทคโนโลยีราชมงคลอีสาน วิทยาเขตสุรินทร์",
-  "email": "tarattakan.pa@rmuti.ac.th",
-  "phone": "094-1539680",
-  "phone_href": "tel:+66941539680",
-  "facebook": "https://www.facebook.com/comra357",
-  "github": "https://github.com/Tarattkan",
-  "scholar": "https://scholar.google.com/citations?user=oPhxu7AAAAAJ&hl=th",
-  "meta_description": "เว็บไซต์วิชาการของ สิบเอก ดร.ถรัฐการ ประชุมวรรณ อาจารย์ มทร.อีสาน วิทยาเขตสุรินทร์ รวบรวมประวัติ ผลงานด้านเทคโนโลยีการศึกษา Generative AI สมรรถนะดิจิทัล และการวิเคราะห์บรรณมิติ",
-  "hero_intro_en": "Technology for learning and research",
-  "affiliation_short_en": "Rajamangala University of Technology Isan\nSurin Campus",
-  "biography_en": "Lecturer in Information Technology and Multimedia\nFaculty of Management Technology, Rajamangala University of Technology Isan, Surin Campus\n\nHis research covers educational technology, generative AI for learning, programming skills and digital competency development, bibliometric analysis, and remote learning.",
-  "photo_alt_en": "Sgt. Dr. Tarattakan Pachumwon",
-  "contact_intro_en": "Get in touch about academic work,\nteaching, and research",
-  "contact_affiliation_en": "Information Technology and Multimedia\nFaculty of Management Technology\nRajamangala University of Technology Isan, Surin Campus",
-  "meta_description_en": "Academic profile of Sgt. Dr. Tarattakan Pachumwon, lecturer at RMUTI Surin Campus. Research in educational technology, generative AI, digital competency, programming education, and bibliometrics.",
-  "orcid": "0009-0000-7953-2066",
   "professional_highlights": [
     {
       "category": "การประเมินการสอน",
@@ -93,11 +44,59 @@
       "category_en": "Academic service",
       "title": "ได้รับการคัดเลือกเป็นผู้ประเมินหลักสูตรเพื่อพัฒนาทักษะดิจิทัลของหน่วยงานภาครัฐ",
       "title_en": "Selected as an assessor of digital-skills curricula for government agencies",
-      "detail": "ครั้งที่ 2 ประจำปีงบประมาณ 2565 ตามประกาศสถาบันพัฒนาบุคลากรภาครัฐด้านดิจิทัล วันที่ 19 กรกฎาคม 2565",
+      "detail": "ครั้งที่ 2 ประจำปีงบประมาณ 2565 ตามประกาศคณะกรรมการรับรองหลักสูตรการพัฒนากำลังคนด้านดิจิทัล วันที่ 19 กรกฎาคม 2565",
       "detail_en": "Second selection round, fiscal year 2022 (B.E. 2565), as listed in the official announcement dated 19 July 2022.",
       "source_label": "ประกาศรายชื่อผู้ได้รับการคัดเลือก",
       "source_label_en": "Official selection announcement",
       "source_url": "https://tacc.bde.go.th/news/approval-expert-list-round-2"
     }
-  ]
+  ],
+  "education": [
+    {
+      "degree": "ปร.ด.",
+      "degree_en": "Ph.D.",
+      "field": "สาขาเทคโนโลยีสารสนเทศและการสื่อสารเพื่อการศึกษา",
+      "field_en": "Information and Communication Technology for Education",
+      "institution": "มหาวิทยาลัยราชภัฏมหาสารคาม",
+      "institution_en": "Rajabhat Maha Sarakham University",
+      "country": "ประเทศไทย",
+      "country_en": "Thailand",
+      "year": 2569
+    },
+    {
+      "degree": "ค.อ.ม.",
+      "degree_en": "Master’s degree (ค.อ.ม.)",
+      "field": "คอมพิวเตอร์และเทคโนโลยีสารสนเทศ",
+      "field_en": "Computer and Information Technology",
+      "institution": "มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี",
+      "institution_en": "King Mongkut’s University of Technology Thonburi",
+      "country": "ประเทศไทย",
+      "country_en": "Thailand",
+      "year": 2557
+    },
+    {
+      "degree": "วท.บ.",
+      "degree_en": "B.Sc.",
+      "field": "เทคโนโลยีสารสนเทศ",
+      "field_en": "Information Technology",
+      "institution": "มหาวิทยาลัยราชภัฏมหาสารคาม",
+      "institution_en": "Rajabhat Maha Sarakham University",
+      "country": "ประเทศไทย",
+      "country_en": "Thailand",
+      "year": 2552
+    }
+  ],
+  "contact_intro": "ช่องทางติดต่อด้านวิชาการ\nการเรียนการสอน และงานวิจัย",
+  "contact_intro_en": "Get in touch about academic work,\nteaching, and research",
+  "contact_affiliation": "สาขาเทคโนโลยีสารสนเทศและมัลติมีเดีย\nคณะเทคโนโลยีการจัดการ\nมหาวิทยาลัยเทคโนโลยีราชมงคลอีสาน วิทยาเขตสุรินทร์",
+  "contact_affiliation_en": "Information Technology and Multimedia\nFaculty of Management Technology\nRajamangala University of Technology Isan, Surin Campus",
+  "email": "tarattakan.pa@rmuti.ac.th",
+  "phone": "094-1539680",
+  "phone_href": "tel:+66941539680",
+  "facebook": "https://www.facebook.com/comra357",
+  "github": "https://github.com/Tarattkan",
+  "scholar": "https://scholar.google.com/citations?user=oPhxu7AAAAAJ&hl=th",
+  "orcid": "0009-0000-7953-2066",
+  "meta_description": "เว็บไซต์วิชาการของ สิบเอก ดร.ถรัฐการ ประชุมวรรณ อาจารย์ มทร.อีสาน วิทยาเขตสุรินทร์ รวบรวมประวัติ ผลงานด้านเทคโนโลยีการศึกษา Generative AI สมรรถนะดิจิทัล และการวิเคราะห์บรรณมิติ",
+  "meta_description_en": "Academic profile of Sgt. Dr. Tarattakan Pachumwon, lecturer at RMUTI Surin Campus. Research in educational technology, generative AI, digital competency, programming education, and bibliometrics."
 }
