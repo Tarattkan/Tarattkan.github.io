@@ -114,3 +114,20 @@ html[lang=en] .topic-english,html[lang=en] .expertise-english{display:none}html[
 .contact-details>.researcher-id{margin-top:0;margin-bottom:24px}
 @media(max-width:600px){.scholar-link{margin-top:12px}.researcher-id{gap:12px;padding:12px 14px}}
 @media print{.scholar-link,.researcher-id{background:#fff;border:0;box-shadow:none;padding-left:0}.scholar-link .research-profile-arrow,.researcher-id .research-profile-arrow{display:none}}
+
+/* Social brand icons (Bootstrap Icons, MIT) and optional editable Instagram.
+   Crisp local inline SVGs avoid external image dependencies. */
+.social-links{flex-wrap:wrap;align-items:center;gap:16px 30px}
+.social-links .instagram-link{display:inline-flex;align-items:center;gap:10px;min-height:48px;max-width:100%;font-family:var(--sans)}
+.instagram-link .instagram-icon{display:block;width:24px;height:24px;flex-shrink:0}
+.social-links .instagram-link span{margin:0;color:inherit;font-size:13px}
+.social-links .instagram-copy{display:flex;flex-direction:column;gap:1px;min-width:0}
+.social-links .instagram-label{font-size:11px;color:var(--muted);line-height:1.6}
+.social-links .instagram-handle{font-family:Arial,sans-serif;font-weight:600;line-height:1.6;overflow-wrap:anywhere}
+.social-links .instagram-arrow{margin-left:6px;color:var(--gold);font:18px/1 Arial,sans-serif;flex-shrink:0}
+
+.social-links a{display:inline-flex;align-items:center;gap:10px;min-height:48px;max-width:100%}
+.social-brand-icon{display:block;width:24px;height:24px;flex-shrink:0}
+.facebook-icon{color:#1877f2}.github-icon{color:#24292f}.instagram-icon{color:#b23278}
+.social-links a .social-link-label{margin:0;font-size:13px;color:inherit}
+.social-links a .social-link-arrow{margin-left:6px;color:var(--gold);font:18px/1 Arial,sans-serif}

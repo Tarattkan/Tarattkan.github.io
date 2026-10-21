@@ -253,6 +253,14 @@ content:
     pattern:
       regex: ^https://[^\s]+$
       message: ใส่ลิงก์ HTTPS ที่ถูกต้อง หรือเว้นว่างหากยังไม่มีลิงก์
+  - name: instagram
+    label: อินสตาแกรม / Instagram
+    type: string
+    required: false
+    description: ลิงก์โปรไฟล์ Instagram เช่น https://www.instagram.com/comra357/ เว้นว่างเพื่อไม่แสดง / Instagram profile URL. Leave blank to hide.
+    pattern:
+      regex: ^(https://(www\.)?instagram\.com/[A-Za-z0-9._]+/?)?$
+      message: ใส่ลิงก์โปรไฟล์ Instagram แบบ HTTPS หรือเว้นว่าง / Enter an HTTPS Instagram profile URL or leave blank.
   - name: github
     label: GitHub
     type: string
