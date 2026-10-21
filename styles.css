@@ -96,3 +96,21 @@ html[lang=en] .topic-english,html[lang=en] .expertise-english{display:none}html[
 @media(max-width:820px){.professional-grid{grid-template-columns:1fr;gap:20px}.professional-block{margin-top:48px;padding-top:35px}}
 @media(max-width:600px){.professional-block{margin-top:40px;padding-top:32px}.professional-card{padding:21px 20px}.professional-card h4{font-size:16px}.professional-detail{font-size:12px}}
 @media print{.professional-block{margin-top:24px;padding-top:20px}.professional-card{break-inside:avoid}.researcher-id{border:0;padding-left:0}}
+
+/* Clear research-profile brand marks. Official unmodified Google Scholar wordmark
+   (2x PNG from scholar.google.com) and ORCID iD SVG (ORCID Figshare 5008697).
+   Embedded in the template so profile links have no external image dependency. */
+.scholar-link{display:inline-flex;align-items:center;justify-content:space-between;gap:18px;max-width:100%;min-height:64px;margin-top:10px;padding:16px 18px;border:1px solid #d9dfe5;border-radius:8px;background:#fff;color:var(--navy);box-shadow:0 3px 12px #102c4207;transition:border-color .18s,background .18s,box-shadow .18s}
+.scholar-wordmark{display:block;width:189px;height:30px;max-width:calc(100% - 36px);object-fit:contain}
+.scholar-link .research-profile-arrow{font:20px/1 Arial,sans-serif;color:#496678;flex-shrink:0}
+.scholar-link:hover{border-color:#869db4;background:#f8fbff;box-shadow:0 4px 14px #102c4210}
+.researcher-id{display:inline-grid;grid-template-columns:32px minmax(0,1fr) 16px;align-items:center;gap:14px;max-width:100%;min-height:66px;padding:12px 16px;border:1px solid #d5dcc9;border-radius:8px;background:#fff;color:var(--navy);text-align:left}
+.researcher-id .orcid-icon{width:32px;height:32px;max-width:none}
+.researcher-id-copy{display:flex;flex-direction:column;gap:2px;min-width:0}
+.researcher-id-label{font:700 13px/1.5 Arial,sans-serif;letter-spacing:.025em;color:#354a1c}
+.researcher-id-number{font:13px/1.5 Arial,sans-serif;color:var(--navy);white-space:nowrap}
+.researcher-id .research-profile-arrow{font:18px/1 Arial,sans-serif;color:#496678}
+.researcher-id:hover{background:#f9fbf5;border-color:#91a96a}
+.contact-details>.researcher-id{margin-top:0;margin-bottom:24px}
+@media(max-width:600px){.scholar-link{margin-top:12px}.researcher-id{gap:12px;padding:12px 14px}}
+@media print{.scholar-link,.researcher-id{background:#fff;border:0;box-shadow:none;padding-left:0}.scholar-link .research-profile-arrow,.researcher-id .research-profile-arrow{display:none}}
