@@ -4,7 +4,7 @@
   "name_th": "สิบเอก ดร.ถรัฐการ ประชุมวรรณ",
   "hero_intro": "เทคโนโลยีเพื่อการเรียนรู้และการวิจัย",
   "affiliation_short": "มหาวิทยาลัยเทคโนโลยีราชมงคลอีสาน\nวิทยาเขตสุรินทร์",
-  "biography": "อาจารย์สังกัดสาขาเทคโนโลยีสารสนเทศและมัลติมีเดีย\nคณะเทคโนโลยีการจัดการ มหาวิทยาลัยเทคโนโลยีราชมงคลอีสาน วิทยาเขตสุรินทร์",
+  "biography": "อาจารย์สังกัดสาขาเทคโนโลยีสารสนเทศและมัลติมีเดีย\nคณะเทคโนโลยีการจัดการ มหาวิทยาลัยเทคโนโลยีราชมงคลอีสาน วิทยาเขตสุรินทร์\n\nผลงานวิจัยครอบคลุมเทคโนโลยีการศึกษา การใช้ Generative AI เพื่อการเรียนรู้ การพัฒนาทักษะการเขียนโปรแกรมและสมรรถนะดิจิทัล ตลอดจนการวิเคราะห์บรรณมิติและการเรียนรู้ทางไกล",
   "photo": "/assets/uploads/tarattakan-profile.jpg",
   "photo_alt": "สิบเอก ดร.ถรัฐการ ประชุมวรรณ",
   "roles": [
@@ -67,12 +67,12 @@
   "facebook": "https://www.facebook.com/comra357",
   "github": "https://github.com/Tarattkan",
   "scholar": "https://scholar.google.com/citations?user=oPhxu7AAAAAJ&hl=th",
-  "meta_description": "เว็บไซต์วิชาการของ สิบเอก ดร.ถรัฐการ ประชุมวรรณ อาจารย์มหาวิทยาลัยเทคโนโลยีราชมงคลอีสาน วิทยาเขตสุรินทร์ รวบรวมประวัติ ผลงานวิจัย และความเชี่ยวชาญด้านเทคโนโลยีสารสนเทศและการเรียนรู้",
+  "meta_description": "เว็บไซต์วิชาการของ สิบเอก ดร.ถรัฐการ ประชุมวรรณ อาจารย์ มทร.อีสาน วิทยาเขตสุรินทร์ รวบรวมประวัติ ผลงานด้านเทคโนโลยีการศึกษา Generative AI สมรรถนะดิจิทัล และการวิเคราะห์บรรณมิติ",
   "hero_intro_en": "Technology for learning and research",
   "affiliation_short_en": "Rajamangala University of Technology Isan\nSurin Campus",
-  "biography_en": "Lecturer in Information Technology and Multimedia\nFaculty of Management Technology, Rajamangala University of Technology Isan, Surin Campus",
+  "biography_en": "Lecturer in Information Technology and Multimedia\nFaculty of Management Technology, Rajamangala University of Technology Isan, Surin Campus\n\nHis research covers educational technology, generative AI for learning, programming skills and digital competency development, bibliometric analysis, and remote learning.",
   "photo_alt_en": "Sgt. Dr. Tarattakan Pachumwon",
   "contact_intro_en": "Get in touch about academic work,\nteaching, and research",
   "contact_affiliation_en": "Information Technology and Multimedia\nFaculty of Management Technology\nRajamangala University of Technology Isan, Surin Campus",
-  "meta_description_en": "Academic website of Sgt. Dr. Tarattakan Pachumwon, lecturer at Rajamangala University of Technology Isan, Surin Campus. Biography, education, publications, and expertise in information technology and learning."
+  "meta_description_en": "Academic profile of Sgt. Dr. Tarattakan Pachumwon, lecturer at RMUTI Surin Campus. Research in educational technology, generative AI, digital competency, programming education, and bibliometrics."
 }

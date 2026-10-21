@@ -9,7 +9,11 @@
     "url": "https://doi.org/10.31893/multirev.2026594",
     "topics": "gamification stem เกมมิฟิเคชัน สะเต็ม",
     "category_th": "เกมมิฟิเคชัน · สะเต็มศึกษา",
-    "category_en": "Gamification · STEM education"
+    "category_en": "Gamification · STEM education",
+    "authorship": "ผู้เขียนลำดับที่ 3",
+    "authorship_en": "Third author",
+    "summary": "การวิเคราะห์บรรณมิติเพื่อสำรวจภูมิทัศน์งานวิจัยด้านเกมมิฟิเคชันในการเรียนรู้ STEM",
+    "summary_en": "A bibliometric study mapping the research landscape of gamification in STEM education."
   },
   {
     "year": 2026,
@@ -21,7 +25,11 @@
     "url": "https://doi.org/10.5430/wje.v16n1p46",
     "topics": "ai generative ai digital competency ครู ดิจิทัล ปัญญาประดิษฐ์",
     "category_th": "ปัญญาประดิษฐ์เชิงสร้างสรรค์ · สมรรถนะดิจิทัล",
-    "category_en": "Generative AI · Digital competency"
+    "category_en": "Generative AI · Digital competency",
+    "authorship": "ผู้เขียนลำดับที่ 3",
+    "authorship_en": "Third author",
+    "summary": "แบบจำลองการฝึกอบรมเฉพาะบุคคลที่ใช้ Generative AI เพื่อพัฒนาสมรรถนะดิจิทัลของครู",
+    "summary_en": "A personalized training model enhanced by generative AI to develop teachers’ digital competency."
   },
   {
     "year": 2025,
@@ -33,7 +41,11 @@
     "url": "https://doi.org/10.5539/hes.v15n4p312",
     "topics": "ai programming design thinking caile ปัญญาประดิษฐ์ การเขียนโปรแกรม",
     "category_th": "สภาพแวดล้อมการเรียนรู้ด้วย AI · การเขียนโปรแกรม",
-    "category_en": "AI learning environment · Programming"
+    "category_en": "AI learning environment · Programming",
+    "authorship": "ผู้เขียนลำดับที่ 1 · ผู้ประพันธ์บรรณกิจ",
+    "authorship_en": "First and corresponding author",
+    "summary": "กรอบแนวคิดสภาพแวดล้อมการเรียนรู้ที่บูรณาการการคิดเชิงออกแบบและ Generative AI เพื่อพัฒนาทักษะการเขียนโปรแกรม",
+    "summary_en": "A conceptual learning-environment framework combining design thinking and generative AI to enhance programming skills."
   },
   {
     "year": 2025,
@@ -45,7 +57,11 @@
     "url": "https://doi.org/10.5539/hes.v15n2p54",
     "topics": "digital literacy remote learning ความฉลาดรู้ดิจิทัล การเรียนรู้ทางไกล",
     "category_th": "ความฉลาดรู้ดิจิทัล · การเรียนรู้ทางไกล",
-    "category_en": "Digital literacy · Remote learning"
+    "category_en": "Digital literacy · Remote learning",
+    "authorship": "ผู้เขียนลำดับที่ 1",
+    "authorship_en": "First author",
+    "summary": "การวิเคราะห์บรรณมิติของงานวิจัยด้านความฉลาดรู้ดิจิทัลในการเรียนรู้ทางไกล",
+    "summary_en": "A bibliometric analysis of research on digital literacy in remote learning."
   },
   {
     "year": 2023,
@@ -81,6 +97,10 @@
     "url": "https://pulinet.oas.psu.ac.th/index.php/journal/article/view/330",
     "topics": "สถิติ โปรแกรม นักศึกษา statistical analysis",
     "category_th": "ซอฟต์แวร์สถิติ · การถ่ายทอดเทคโนโลยี",
-    "category_en": "Statistical software · Technology transfer"
+    "category_en": "Statistical software · Technology transfer",
+    "authorship": "ผู้เขียนลำดับที่ 4",
+    "authorship_en": "Fourth author",
+    "summary": "การพัฒนาและถ่ายทอดเทคโนโลยีโปรแกรมวิเคราะห์ข้อมูลทางสถิติเพื่อสนับสนุนการจัดทำปริญญานิพนธ์ของนักศึกษา",
+    "summary_en": "Development and transfer of statistical-analysis software technology to support students’ undergraduate research projects."
   }
 ]
