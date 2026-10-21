@@ -199,8 +199,16 @@
         <p class="result-count" id="result-count" role="status" aria-live="polite" hidden>แสดง {{ site.data.publications | size }} ผลงาน</p>
         <div class="publication-list">
           {% for publication in site.data.publications %}
-          <article class="publication" data-type="{{ publication.type | escape }}" data-topic="{{ publication.topics | escape }}" data-search="{{ publication.title | escape }} {{ publication.citation | escape }} {{ publication.category | escape }} {{ publication.category_th | escape }} {{ publication.category_en | escape }} {{ publication.year | escape }} {{ publication.topics | escape }}">
-            <div class="pub-year">{{ publication.year | escape }}<span data-en="{% if publication.type == "journal" %}Journal{% else %}Conference{% endif %}">{% if publication.type == "journal" %}วารสาร{% else %}ประชุมวิชาการ{% endif %}</span></div>
+          <article class="publication{% if publication.type == "journal" and publication.cover_image and publication.cover_image != "" %} has-cover{% endif %}" data-type="{{ publication.type | escape }}" data-topic="{{ publication.topics | escape }}" data-search="{{ publication.title | escape }} {{ publication.citation | escape }} {{ publication.category | escape }} {{ publication.category_th | escape }} {{ publication.category_en | escape }} {{ publication.year | escape }} {{ publication.topics | escape }}">
+            <div class="pub-meta">
+              <div class="pub-year">{{ publication.year | escape }}<span data-en="{% if publication.type == "journal" %}Journal{% else %}Conference{% endif %}">{% if publication.type == "journal" %}วารสาร{% else %}ประชุมวิชาการ{% endif %}</span></div>
+              {% if publication.type == "journal" and publication.cover_image and publication.cover_image != "" %}
+              <figure class="pub-cover">
+                <div class="pub-cover-frame"><img src="{{ publication.cover_image | relative_url | escape }}" width="300" height="400" loading="lazy" decoding="async" alt="{{ publication.cover_alt | default: publication.citation | escape }}" data-alt-en="{{ publication.cover_alt_en | default: publication.cover_alt | default: publication.citation | escape }}"></div>
+                {% if publication.cover_caption and publication.cover_caption != "" %}<figcaption>{% if publication.cover_source and publication.cover_source != "" %}<a href="{{ publication.cover_source | escape }}" target="_blank" rel="noopener noreferrer" aria-label="ดูแหล่งที่มาของปกวารสาร (เปิดแท็บใหม่)" data-aria-label-en="View journal cover source (opens in a new tab)"><span data-en="{{ publication.cover_caption_en | default: publication.cover_caption | escape }}">{{ publication.cover_caption | escape }}</span><span aria-hidden="true"> ↗</span></a>{% else %}<span data-en="{{ publication.cover_caption_en | default: publication.cover_caption | escape }}">{{ publication.cover_caption | escape }}</span>{% endif %}</figcaption>{% endif %}
+              </figure>
+              {% endif %}
+            </div>
             <div class="pub-detail"><p class="pub-category" data-en="{{ publication.category_en | default: publication.category | escape }}">{{ publication.category_th | default: publication.category | escape }}</p>
               <h3 lang="{{ publication.language | escape }}">{% if publication.url and publication.url != "" %}<a href="{{ publication.url | escape }}" target="_blank" rel="noopener noreferrer">{{ publication.title | escape }}</a>{% else %}{{ publication.title | escape }}{% endif %}</h3>
               <p class="pub-journal">{{ publication.citation | escape | newline_to_br }}</p>
